@@ -14,8 +14,10 @@ $secondary-font-color: #9A9DA0;
 
 /*миксин для шрифта кнопок*/
 @mixin button-font {
-    font-family: Mplus 1p;
+    font-family: 'M PLUS 1p';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
+    text-decoration: none;
+    color: $main-font-color;
 }
