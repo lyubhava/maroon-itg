@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F8F8F6;
+    font-family: 'M PLUS 1p';
+}
+
+@import 'fonts';
+@import 'var';
+@import 'template';
+@import 'header';
+@import 'bestsellers';
+@import 'filters';
+@import 'product-card';
+@import 'main-care';
+@import 'catalog';

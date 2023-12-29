@@ -1,0 +1,442 @@
+.product-card {
+    display: flex;
+    margin: 40px 198px 140px 98px;
+
+    &__img {
+        width: 630px;
+        height: 647px;
+        margin-right: 70px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        /*элемент для части кроме картинки*/
+        width: 40%;
+    }
+}
+
+.title {
+    /*заголовок, вынесла за пределы чтобы использовать повторно*/
+    color: $main-font-color;
+    @include heading-font(32px, 500, 120%);
+}
+
+.subtitle {
+    /*подзаголовок, вынесла за пределы чтобы использовать повторно*/
+    @include button-font;
+}
+
+.info {
+    /*блок для части кроме картинки*/
+    display: flex;
+    flex-direction: column;
+
+    .info__title {
+        /*блок для заголовка*/
+        margin: 49px 0 0 0;
+    }
+
+    .info__subtitle {
+        /*блок для подзаголовка*/
+        margin: 15px 0 45px 0;
+    }
+
+    .info__paragraf {
+        /*текст, походу нужно было как-то в 1 р вкладывать, ведь в иделе если этим сайтом бы пользовались то для нового товара бы каждый раз не делали новый html, хз как это обычно работает, но я не знаю как без br это сделать*/
+        margin-bottom: 15px;
+    }
+
+    .paragraf {
+        .paragraf__p:last-child {
+            margin-bottom: 0;
+        }
+
+        .paragraf__p {
+            margin-top: 0;
+            margin-bottom: 15px;
+            @include button-font;
+        }
+    }
+
+    .info__line {
+        hr {
+            color: #b3bac1;
+        }
+    }
+
+    .info__toggle {
+        /*Раскрывающийся состав и способ применения стили для позиционирования*/
+        margin: 0;
+    }
+
+    .toggle {
+
+        /*Раскрывающийся состав и способ применения, тот же блок, стили для стилизации*/
+        .toggle-title {
+            margin: 18px 15px 20px 0;
+            display: flex;
+            justify-content: space-between;
+
+            .toggle-title__name {
+                @include button-font;
+                font-weight: 500;
+            }
+
+            .toggle-title__minus {
+                color: $main-font-color;
+            }
+        }
+
+        .toggle__list {
+            width: 370px;
+            margin-bottom: 20px;
+
+            p {
+                @include button-font;
+                font-size: 85%;
+                line-height: 145%;
+            }
+        }
+    }
+
+    .info__volume {
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+    }
+
+    .volume {
+        .volume__text {
+            @include button-font;
+        }
+
+        .volume__options {
+            accent-color: $main-font-color;
+        }
+    }
+
+    .info__sell {
+        margin-top: 45px;
+        display: flex;
+    }
+
+    .sell {
+        line-height: normal;
+
+        .sell__price {
+            @include button-font;
+            font-size: 26px;
+            margin-right: 50px;
+        }
+
+        .box {
+
+            /*кнопку взяла у Даши, убрала только зеленый т.к на этой стр ничего зеленого нет*/
+            .box__action {
+                max-width: 214px;
+                margin: 0 auto;
+            }
+
+            .box__btn {
+                font-size: 16px;
+                font-weight: 500;
+                padding: 12px 27px 16px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 2px;
+                border: 1px solid #b3bac1;
+                color: $main-font-color;
+                text-decoration: none;
+                text-wrap: nowrap;
+            }
+
+            .box__btn:hover {
+                background-color: rgb(254, 244, 244);
+                color: $main-font-color;
+            }
+        }
+    }
+}
+
+/* ↓ вторая часть, "вам может понравиться" ↓ */
+.recommended {
+    margin: 0 98px 140px 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .recommended__title {
+        /*добавила к заголовку стиль сверху строка 30*/
+        margin-bottom: 60px;
+    }
+
+    /**/
+
+    .recommended__product {
+        /*только задала отступы тк это элемент. стили самого блока ниже в rec-product */
+        margin-bottom: 50px;
+    }
+
+    .rec-product {
+        display: flex;
+        flex-shrink: 1;
+
+        #item1 {
+            background-image: url(../../images/product-cardImg/background/item1.jpg);
+        }
+
+        #item2 {
+            background-image: url(../../images/product-cardImg/background/item2.jpg);
+        }
+
+        #item3 {
+            background-image: url(../../images/product-cardImg/background/item3.jpg);
+        }
+
+        #item4 {
+            background-image: url(../../images/product-cardImg/background/item4.jpg);
+        }
+
+        #item1,
+        #item2,
+        #item3,
+        #item4 {
+            @extend %img_recommended !optional;
+            /*добавила в var*/
+        }
+
+        .rec-product__card {
+            width: 270px;
+            height: 350px;
+            margin-right: 35px;
+        }
+
+        .rec-product__card:last-child {
+            margin-right: 0;
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 0 20px 20px 20px;
+
+            .card__text {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .top {
+                font-size: 16px;
+
+                img {
+                    width: 7px;
+                    height: 9px;
+                }
+            }
+        }
+    }
+
+    .recommended__nav {
+        width: 100%;
+        margin-bottom: 140px;
+
+        .nav-items {
+            display: flex;
+            justify-content: space-between;
+
+            .nav-items__pages {
+                margin-left: 45%;
+            }
+
+            .pages {
+                display: flex;
+                align-items: center;
+                gap: 10px 10px;
+
+                .pages__active {
+                    color: $main-font-color;
+                }
+
+                .pages__line {
+                    width: 50px;
+                    height: 1px;
+                    flex: 1;
+                }
+
+                .pages__total {
+                    columns: $secondary-font-color;
+                }
+            }
+
+            .nav-items__arrows {
+
+                /*стрелки выходят за пределы при размерах более 1370px не стала исправлять тк говорили только планшет-телефон*/
+                img:first-child {
+                    margin-right: 32px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .product-card {
+        margin: 40px 45px 0 40px;
+        flex-direction: column;
+
+        &__img {
+            min-width: 100%;
+            height: 470px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                width: 100%;
+                /* Чтобы изображение занимало всю доступную ширину контейнера */
+                height: auto;
+            }
+        }
+
+        &__info {
+            width: 100%;
+        }
+    }
+
+    .info {
+        .toggle {
+            .toggle__list {
+                width: 100%;
+            }
+        }
+    }
+
+    .recommended {
+        margin: 120px 45px 0 45px;
+
+        .recommended__product {
+            width: 100%;
+        }
+
+        .rec-product {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, minmax(350px, 1fr));
+            grid-gap: 30px;
+
+            .rec-product__card {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .product-card {
+        margin: 40px 15px 0 15px;
+        flex-direction: column;
+
+        &__img {
+            margin: 0;
+            width: 100%;
+            height: 50%;
+            overflow: hidden;
+        }
+
+        &__info {
+            width: 100%;
+        }
+    }
+
+    .info {
+        .info__paragraf {
+            margin-right: 15px;
+        }
+
+        .toggle {
+            .toggle__list {
+                p {
+                    margin-right: 25px;
+                }
+            }
+        }
+
+        .info__volume {
+            .volume__text {
+                margin-right: 17px;
+                font-weight: 500;
+            }
+        }
+
+        .sell {
+            .sell__price {
+                width: 30%;
+                font-weight: 500;
+                margin-right: 12px;
+                align-self: center;
+            }
+
+            .sell__button {
+                width: 70%;
+
+                .box__btn {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .recommended {
+        margin: 80px 15px 0 15px;
+        display: flex;
+
+        .recommended__title {
+            .title {
+                text-align: center;
+            }
+        }
+
+        .recommended__product {
+            width: 100%;
+        }
+
+        .rec-product {
+            .rec-product__card {
+                display: none;
+            }
+
+            .rec-product__card:nth-child(2) {
+                display: flex;
+            }
+        }
+
+        .rec-product {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(1, minmax(290px, 1fr));
+
+            .rec-product__card {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .recommended__nav {
+            margin-bottom: 80px;
+
+            .nav-items {
+                .nav-items__pages {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+}

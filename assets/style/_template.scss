@@ -1,0 +1,97 @@
+// миксин для основных заголовков на страницах, кроме главного заголовка "maroon" и "каталог"
+
+// миксин для шрифта кнопок
+@mixin button-font {
+    font-family: 'M PLUS 1p';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    text-decoration: none;
+    color: $main-font-color;
+
+    // для уменьшения шрифта в кнопках при смене размера экрана    
+    @media screen and (max-width:767px) {
+        font-size: 14px;
+    }
+}
+
+
+%img_recommended {
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin border {
+    border-radius: 2px;
+    border: 1px solid #b3bac1;
+}
+
+@mixin text-font($size, $weight, $height) {
+    font-size: $size;
+    font-family: 'M PLUS 1p';
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin heading-font ($size, $weight, $height) {
+    font-size: $size;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: $weight;
+    line-height: $height;
+}
+
+@mixin absolute-right ($top , $right ) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+@mixin absolut-top-center ($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+}
+
+@mixin background () {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+@mixin xs {
+    @media only screen and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media only screen and (max-width: 1365px) {
+        @content;
+    }
+}

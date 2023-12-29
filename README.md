@@ -3,4 +3,4 @@
 ## Работа с SCSS
 
 Для того чтобы заработал импорт ваших стилей к станице, нужно запустить команду которая скомпилирует scss в css:
-например - npx sass ./assets/style/catalog.scss ./assets/style/css/catalog.css
+например - `npx sass ./assets/style/main.scss ./assets/style/css/main.css`

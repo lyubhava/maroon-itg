@@ -1,0 +1,167 @@
+.hero,
+.header {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    a {
+        color: $main-font-color;
+        text-decoration: none;
+    }
+}
+
+.hero {
+    background-image: url('../../images/headerImg/Rectangle35.png');
+    @include background;
+}
+
+.header {
+    &__wrap {
+        @include flex-between;
+        padding: 40px 98px;
+        border-bottom: 1px solid #b3bac1;
+
+        @include sm {
+            @include flex-between;
+            padding: 40px 45px 70px;
+        }
+
+        @include xs {
+            @include flex-between;
+            padding: 30px 15px 60px;
+        }
+    }
+}
+
+// Убираю обводку и меняю отступы если хедер внутри блока hero
+.hero .header__wrap {
+    padding: 40px 98px;
+    border: none;
+}
+
+
+.Hamburger {
+    @include flex-center;
+    text-align: center;
+    display: none;
+
+    @include sm {
+        display: flex;
+    }
+
+
+    &_sm {
+        width: 24px;
+        display: none;
+
+        @include sm {
+            display: block;
+        }
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    &_xs {
+        width: 22px;
+        display: none;
+        text-align: center;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+.logo {
+    &_sm {
+
+        display: block;
+        width: 131px;
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    &_xs {
+        display: none;
+        width: 85px;
+        height: 13px;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+
+.nav {
+    @include flex-center;
+    gap: 51px;
+
+    &__menu {
+        @include sm {
+            display: none;
+        }
+    }
+
+    &__link {
+        font-size: 16px;
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.usernav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include xs {
+        gap: 20px
+    }
+}
+
+.cabinet {
+    display: block;
+
+    @include xs {
+        display: none;
+    }
+
+    &_xs {
+        display: none;
+        width: 13px;
+        height: 16px;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+.basket {
+    display: block;
+
+    @include xs {
+        display: none;
+    }
+
+    &_xs {
+        display: none;
+        width: 14px;
+        height: 16px;
+
+        @include xs {
+            display: block;
+        }
+    }
+}

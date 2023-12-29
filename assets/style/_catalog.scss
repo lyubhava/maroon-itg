@@ -1,0 +1,397 @@
+/*общие свойства, предлагаю как вариант их вынести в отдельный файл _template.scss со шрифтами и шаблонами, а в _var.scss оставить только переменные (+добавить переменные для font-family), или оставить просто в начале документа со стилями*/
+.container {
+    max-width: 1366px;
+    background-color: #F8F8F6;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* окончание общих свойств */
+
+
+.catalog {
+    &__body {
+        max-width: 1170px;
+        margin: 0 98px 0 98px;
+
+        @media screen and (max-width: 1365px) {
+            margin: 0 45px 0 45px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 0 15px 0 15px;
+        }
+    }
+
+    &__headline {
+        margin-top: 48px;
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width: 767px) {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__title {
+        @include heading-font(36px, 500, 130%);
+
+        @media screen and (max-width: 767px) {
+            @include heading-font(28px, 500, 130%);
+        }
+
+    }
+
+    &__filter-button {
+        @include button-font;
+        width: 141px;
+        height: 41px;
+        border-radius: 2px;
+        border: 1px solid #B3BAC1;
+
+        @media screen and (max-width: 767px) {
+            font-family: 'M PLUS 1p';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            text-decoration: none;
+            color: $main-font-color;
+            width: 108px;
+            height: 40px;
+            border-radius: 2px;
+            border: 1px solid #B3BAC1;
+        }
+    }
+
+    &__cards {
+        margin: 60px 0 50px 0;
+
+        @media screen and (max-width: 1365px) {
+            margin: 47px 0 50px 0;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 50px 0 35px 0;
+        }
+    }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 270px);
+    gap: 30px;
+    justify-content: center;
+
+    @media screen and (max-width: 1365px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 324px);
+        gap: 30px;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 767px) {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 290px);
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+// Поменяла название класса, так как одинаковые на разных страницах
+.catalog-card {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 270px;
+    height: 350px;
+    padding: 20px;
+    line-height: 145%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    @media screen and (max-width: 1365px) {
+        width: 324px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 350px;
+        padding: 20px;
+        line-height: 145%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    @media screen and (max-width: 767px) {
+        width: 290px;
+        height: 290px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding: 20px;
+        line-height: 145%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    &__main-info {
+        color: $main-font-color;
+        font-family: Raleway;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 145%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__extra-info {
+        color: $secondary-font-color;
+        font-family: Mplus 1p;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 145%;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+.card-high {
+    background-image: url("../../images/catalogImg/background/High.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/high_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/high_mob.png")
+        }
+    }
+}
+
+.card-rest {
+    background-image: url("../../images/catalogImg/background/Rest.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/rest_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/rest_mob.png")
+        }
+    }
+}
+
+.card-rose {
+    background-image: url("../../images/catalogImg/background/Rose.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/rose_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/rose_mob.png")
+        }
+    }
+}
+
+.card-milk {
+    background-image: url("../../images/catalogImg/background/Milk.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/milk_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/milk_mob.png")
+        }
+    }
+}
+
+.card-paradise {
+    background-image: url("../../images/catalogImg/background/Paradise.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/paradise_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/paradise_mob.png")
+        }
+    }
+}
+
+.card-sun {
+    background-image: url("../../images/catalogImg/background/Sun.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/sun_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/sun_mob.png")
+        }
+    }
+}
+
+.card-violet {
+    background-image: url("../../images/catalogImg/background/Violet.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/violet_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/violet_mob.png")
+        }
+    }
+}
+
+.card-clean {
+    background-image: url("../../images/catalogImg/background/Clean.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/clean_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/clean_mob.png")
+        }
+    }
+}
+
+.card-coconut {
+    background-image: url("../../images/catalogImg/background/Coconut.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/coconut_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/coconut_mob.png")
+        }
+    }
+}
+
+.card-lavender {
+    background-image: url("../../images/catalogImg/background/Lavender.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/lavendar_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/lavender_mob.png")
+        }
+    }
+}
+
+.card-lotos {
+    background-image: url("../../images/catalogImg/background/Lotos.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/lotos_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/lotos_mob.png")
+        }
+    }
+}
+
+.card-earth {
+    background-image: url("../../images/catalogImg/background/Earth.png");
+
+    @media screen and (max-width: 1365px) {
+        background-image: url("../../images/catalogImg/backgroundTablet/earth_tab.png");
+
+        @media screen and (max-width: 767px) {
+            background-image: url("../../images/catalogImg/backgroundMobile/earth_mob.png")
+        }
+    }
+}
+
+.product-navigation {
+    padding-left: 40%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .pages {
+        display: flex;
+        justify-self: center;
+        font-family: Mplus 1p;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 145%;
+
+        &__dash {
+            max-width: 50px;
+            min-width: 30px;
+            max-height: 1px;
+            display: flex;
+            align-self: center;
+            margin: 0 10px 0 10px;
+        }
+
+        &__active {
+            color: $main-font-color;
+        }
+
+        &__total {
+            color: $secondary-font-color;
+        }
+    }
+
+    .arrows {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 26px;
+        max-height: 12px;
+
+        &__left {
+            margin-right: 32px;
+        }
+    }
+}
+
+.recent {
+    &__body {
+        max-width: 1170px;
+        margin: 140px 98px 0 98px;
+
+        @media screen and (max-width: 1365px) {
+            margin: 120px 45px 0 45px;
+        }
+
+        @media screen and (max-width: 767px) {
+            margin: 80px 15px 40px 15px;
+        }
+    }
+
+    &__title {
+        @include heading-font(32px, 500, 125%);
+        text-align: center;
+    }
+
+    &__cards {
+        margin: 60px 0 50px 0;
+    }
+
+    &__cards>.product-card.card-clean {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__cards>.product-card.card-lavender {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+
+    &__cards>.product-card.card-coconut {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
+    }
+}

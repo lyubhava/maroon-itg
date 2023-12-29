@@ -1,0 +1,205 @@
+.section-catalog {
+    max-width: 1366px;
+    margin: 48px auto 0;
+    margin-bottom: 50px;
+
+    .wrapper-catalog {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 98px;
+        padding-left: 98px;
+
+        @media screen and (max-width:767px) {
+            padding-right: 45px;
+            padding-left: 45px;
+        }
+
+        @media screen and (max-width:767px) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        &__heading-1 {
+            color: $main-font-color;
+            font-family: Raleway;
+            font-size: 36px;
+            font-weight: 500;
+            margin-top: 0;
+
+            @media screen and (max-width:767px) {
+                margin-bottom: 0;
+                font-size: 28px;
+            }
+        }
+
+        &__button {
+            border: none;
+            background: none;
+            padding: 0;
+            cursor: pointer;
+        }
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        flex-wrap: wrap;
+
+        @media screen and (max-width:767px) {
+            gap: 60px;
+            justify-content: flex-start;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+
+        @media screen and (max-width:767px) {
+            margin-top: 50px;
+            margin-left: 35px;
+        }
+
+        &__fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+
+            @media screen and (max-width:767px) {
+                width: 100%;
+            }
+        }
+
+        &__heading-2 {
+            margin-bottom: 31px;
+            color: $main-font-color;
+            font-family: 'M PLUS 1p';
+            font-size: 18px;
+            font-weight: 500;
+            position: relative;
+
+            @media screen and (max-width:767px) {
+                border-bottom: 1px solid #DBDCE0;
+                width: 100%;
+                padding-bottom: 20px;
+
+                &::after {
+                    content: '';
+                    width: 12px;
+                    height: 0.4px;
+                    background-color: #122947;
+                    position: absolute;
+                    right: 0;
+                    top: 10px;
+                }
+            }
+
+        }
+
+        &__label {
+            color: $secondary-font-color;
+            font-family: 'M PLUS 1p';
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &__input {
+            appearance: none;
+            position: absolute;
+        }
+
+        &__input:checked+label {
+            color: $main-font-color;
+
+            span {
+                &::before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #122947;
+                    display: block;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    position: absolute;
+                }
+            }
+        }
+
+        &__checkbox {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            background-color: #F8F8F6;
+            border: 1px solid #CDCDCD;
+            border-radius: 50%;
+            left: -24px;
+        }
+
+        &__inputs-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            padding-left: 24px;
+        }
+
+        &__input-container {
+            position: relative;
+
+            &.buttons {
+                display: flex;
+                gap: 18px;
+                margin-top: 20px;
+            }
+
+            @media screen and (max-width:767px) {
+                &.buttons {
+                    margin-top: 52px;
+                    display: none;
+                }
+            }
+
+            &_tablet {
+                display: none;
+
+                @media screen and (max-width:767px) {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                    gap: 18px;
+                    padding: 0;
+                }
+            }
+        }
+
+        &__button-submit {
+            @include button-font;
+            border-radius: 2px;
+            border: 1px solid #122947;
+            background-color: #F8F8F6;
+            padding: 13px 26px 16px 26px;
+            margin: 0;
+        }
+
+        &__button-reset {
+            @include button-font;
+            border-radius: 2px;
+            border: 1px solid #B3BAC1;
+            background-color: #F8F8F6;
+            padding: 13px 33px 16px 33px;
+            margin: 0;
+        }
+
+        @media screen and (max-width: 767px) {
+
+            &__button-submit {
+                padding: 13px 20px 16px 17px;
+            }
+
+            &__button-reset {
+                padding: 13px 24px 16px 25px;
+            }
+        }
+    }
+
+
+}
