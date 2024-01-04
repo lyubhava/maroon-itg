@@ -1039,7 +1039,6 @@ body {
   max-width: 1366px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
   padding: 0px 168px 70px;
 }
@@ -1052,7 +1051,6 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .mainCare__wrap {
-    display: flex;
     position: relative;
     padding: 190px 15px 60px;
   }

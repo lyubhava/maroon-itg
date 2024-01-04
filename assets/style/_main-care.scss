@@ -9,7 +9,8 @@
     &__wrap {
         overflow: hidden;
         max-width: 1366px;
-        @include flex-between;
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
         padding: 0px 168px 70px;
 
@@ -20,7 +21,6 @@
         }
 
         @include xs {
-            display: flex;
             position: relative;
             padding: 190px 15px 60px;
         }
