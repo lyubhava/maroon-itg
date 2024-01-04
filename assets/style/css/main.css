@@ -41,19 +41,31 @@ body {
   background-position: center center;
 }
 
+.border-wrapper {
+  border-bottom: 1px solid #b3bac1;
+}
+
+.header {
+  max-width: 1366px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 1365px) {
+  .header {
+    max-width: 768px;
+  }
+}
 .header__wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 98px;
-  border-bottom: 1px solid #b3bac1;
 }
 @media only screen and (max-width: 1365px) {
   .header__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 45px 70px;
+    padding: 40px 45px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -61,13 +73,17 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 15px 60px;
+    padding: 30px 15px 32px;
   }
 }
 
 .hero .header__wrap {
-  padding: 40px 98px;
-  border: none;
+  padding-bottom: 70px;
+}
+@media only screen and (max-width: 767px) {
+  .hero .header__wrap {
+    padding-bottom: 60px;
+  }
 }
 
 .Hamburger {
@@ -1014,12 +1030,17 @@ body {
 }
 /* блок Натуральная косметика
 для бережного ухода за кожей */
+.mainCare a {
+  color: #122947;
+  text-decoration: none;
+}
 .mainCare__wrap {
+  overflow: hidden;
+  max-width: 1366px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1366px;
   padding: 0px 168px 70px;
 }
 @media only screen and (max-width: 1365px) {
@@ -1035,10 +1056,6 @@ body {
     position: relative;
     padding: 190px 15px 60px;
   }
-}
-.mainCare a {
-  color: #122947;
-  text-decoration: none;
 }
 
 .mainCareBox {
@@ -1219,10 +1236,16 @@ body {
 }
 
 /* блок Встречайте весну
-вместе с нами */
+  вместе с нами */
+.mainSpring a {
+  color: #122947;
+  text-decoration: none;
+}
 .mainSpring__wrap {
+  overflow: hidden;
+  max-width: 1366px;
   position: relative;
-  background: url("../../images/main-careImg/банер 1.png");
+  background: url("../../images/springImg/банер 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -1232,7 +1255,7 @@ body {
 }
 @media only screen and (max-width: 1365px) {
   .mainSpring__wrap {
-    background-image: url("../../images/main-careImg/банер 1 432.png");
+    background-image: url("../../images/springImg/банер 1 432.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1242,17 +1265,13 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .mainSpring__wrap {
-    background-image: url("../../images/main-careImg/баннер 1vert.png");
+    background-image: url("../../images/springImg/баннер 1vert.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 562px;
     padding: 296px 38px 60px;
   }
-}
-.mainSpring a {
-  color: #122947;
-  text-decoration: none;
 }
 
 .mainSpringBox {
@@ -1347,6 +1366,11 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .mainSpringBox__btn {
+    font-size: 14px;
+    font-family: "M PLUS 1p";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
     width: 132px;
     height: 40px;
     margin: 0 auto;
@@ -1355,8 +1379,26 @@ body {
 
 /* блок Индивидуальный уход */
 .personalCare {
-  padding: 140px 98px;
   overflow: hidden;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 140px 98px;
+}
+.personalCare a {
+  color: #122947;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1365px) {
+  .personalCare {
+    max-width: 768px;
+    padding: 120px 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCare {
+    max-width: 320px;
+    padding: 80px 15px 272px;
+  }
 }
 .personalCare__wrap {
   position: relative;
@@ -1369,38 +1411,53 @@ body {
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
   transform: translate(0, -50%);
-  width: 670px;
-  height: 451px;
-  display: block;
 }
 @media only screen and (max-width: 1365px) {
   .personalCareImg {
-    display: none;
+    right: -45px;
   }
 }
 @media only screen and (max-width: 767px) {
   .personalCareImg {
+    display: block;
+    top: unset;
+    right: unset;
+    bottom: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.personalCareImg__xl {
+  width: 670px;
+  height: 451px;
+}
+@media only screen and (max-width: 1365px) {
+  .personalCareImg__xl {
     display: none;
   }
 }
-.personalCareImg_sm {
-  width: 398px;
-  height: 403px;
+.personalCareImg__sm {
   display: none;
+  width: 281px;
+  height: 403px;
 }
 @media only screen and (max-width: 1365px) {
-  .personalCareImg_sm {
+  .personalCareImg__sm {
     display: block;
   }
 }
-.personalCareImg_xs {
-  display: flex;
+@media only screen and (max-width: 767px) {
+  .personalCareImg__sm {
+    display: none;
+  }
+}
+.personalCareImg__xs {
+  display: none;
   width: 250px;
   height: 252px;
-  display: none;
 }
 @media only screen and (max-width: 767px) {
-  .personalCareImg_xs {
+  .personalCareImg__xs {
     display: block;
   }
 }
@@ -1411,6 +1468,19 @@ body {
   background-color: #f4f1ed;
   padding: 100px;
 }
+@media only screen and (max-width: 1365px) {
+  .personalCareBox {
+    width: 100%;
+    height: unset;
+    padding: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox {
+    text-align: center;
+    padding: 60px 31px 110px;
+  }
+}
 .personalCareBox__title {
   font-size: 32px;
   font-family: Raleway;
@@ -1419,9 +1489,27 @@ body {
   line-height: 130%;
   margin-bottom: 40px;
 }
+@media only screen and (max-width: 767px) {
+  .personalCareBox__title {
+    font-size: 28px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    margin-bottom: 25px;
+  }
+}
 .personalCareBox__text {
   max-width: 329px;
+  height: 234px;
   margin-bottom: 45px;
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox__text {
+    max-width: 226px;
+    height: unset;
+    margin-bottom: 30px;
+  }
 }
 .personalCareBox__text p {
   font-size: 18px;
@@ -1429,7 +1517,20 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
-  margin-bottom: 18px;
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox__text p {
+    font-size: 16px;
+    font-family: "M PLUS 1p";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .personalCareBox__text p:first-child {
+    display: none;
+  }
 }
 .personalCareBox__text p:last-child {
   margin-bottom: 0;
@@ -1448,15 +1549,46 @@ body {
   width: 200px;
   height: 41px;
 }
+@media only screen and (max-width: 767px) {
+  .personalCareBox__btn {
+    display: inline-flex;
+    font-size: 14px;
+    font-family: "M PLUS 1p";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    width: 182px;
+    height: 40px;
+  }
+}
 
 /* блок Наша история */
 .history {
-  overflow: hidden;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+.history a {
+  color: #122947;
+  text-decoration: none;
+}
+@media only screen and (max-width: 1365px) {
+  .history {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .history {
+    max-width: 320px;
+  }
 }
 .history__wrap {
   background-image: url("../../images/main-careImg/600693-PMYQNV-922 1.jpg");
-  width: 1366px;
   height: 433px;
+}
+@media only screen and (max-width: 1365px) {
+  .history__wrap {
+    height: unset;
+  }
 }
 
 .historyBox {
@@ -1464,12 +1596,29 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  max-width: 761px;
   margin: 0 auto;
   padding-top: 120px;
 }
+@media only screen and (max-width: 1365px) {
+  .historyBox {
+    max-width: 652px;
+    padding: 100px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .historyBox {
+    max-width: 242px;
+    padding: 60px 0;
+  }
+}
 .historyBox__text {
-  max-width: 761px;
   margin-bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .historyBox__text {
+    margin-bottom: 30px;
+  }
 }
 .historyBox__text p {
   font-size: 31px;
@@ -1478,11 +1627,15 @@ body {
   font-weight: 500;
   line-height: 125%;
   text-align: center;
-  width: 761px;
-  height: 102px;
 }
-.historyBox__text p :last-child {
-  margin-bottom: 0;
+@media only screen and (max-width: 767px) {
+  .historyBox__text p {
+    font-size: 22px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+  }
 }
 .historyBox__btn {
   display: flex;
@@ -1498,53 +1651,16 @@ body {
   width: 163px;
   height: 41px;
 }
-
-.mainGallery {
-  overflow: hidden;
-}
-.mainGallery__wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #F8F8F6;
-  width: 1366px;
-  height: 594px;
-}
-
-.mainGalleryBox__title {
-  font-size: 32px;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 125%;
-  margin-bottom: 30px;
-}
-.mainGalleryBox__text {
-  max-width: 269px;
-  margin-bottom: 40px;
-}
-.mainGalleryBox__text p {
-  font-size: 18px;
-  font-family: "M PLUS 1p";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 145%;
-  width: 269px;
-  height: 66px;
-}
-.mainGalleryBox__btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  font-family: "M PLUS 1p";
-  font-style: normal;
-  font-weight: 500;
-  line-height: 140%;
-  border-radius: 2px;
-  border: 1px solid #b3bac1;
-  width: 170px;
-  height: 41px;
+@media only screen and (max-width: 767px) {
+  .historyBox__btn {
+    width: 154px;
+    height: 40px;
+    font-size: 14px;
+    font-family: "M PLUS 1p";
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+  }
 }
 
 /*общие свойства, предлагаю как вариант их вынести в отдельный файл _template.scss со шрифтами и шаблонами, а в _var.scss оставить только переменные (+добавить переменные для font-family), или оставить просто в начале документа со стилями*/

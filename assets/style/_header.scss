@@ -17,28 +17,42 @@
     @include background;
 }
 
+// Добавила обертку с рамкой снизу, чтобы шапка была правильного размера и рамка снизу была на всю ширину экрана
+.border-wrapper {
+    border-bottom: 1px solid #b3bac1;
+}
+
 .header {
+    max-width: 1366px;
+    margin: 0 auto;
+
+    @include sm {
+        max-width: 768px;
+    }
+
     &__wrap {
         @include flex-between;
         padding: 40px 98px;
-        border-bottom: 1px solid #b3bac1;
 
         @include sm {
             @include flex-between;
-            padding: 40px 45px 70px;
+            padding: 40px 45px;
         }
 
         @include xs {
             @include flex-between;
-            padding: 30px 15px 60px;
+            padding: 30px 15px 32px;
         }
     }
 }
 
 // Убираю обводку и меняю отступы если хедер внутри блока hero
 .hero .header__wrap {
-    padding: 40px 98px;
-    border: none;
+    padding-bottom: 70px;
+
+    @include xs {
+        padding-bottom: 60px;
+    }
 }
 
 

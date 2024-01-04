@@ -1,11 +1,16 @@
 /* блок Натуральная косметика
 для бережного ухода за кожей */
 .mainCare {
+    a {
+        color: $main-font-color;
+        text-decoration: none;
+    }
 
     &__wrap {
+        overflow: hidden;
+        max-width: 1366px;
         @include flex-between;
         margin: 0 auto;
-        max-width: 1366px;
         padding: 0px 168px 70px;
 
         @include sm {
@@ -19,11 +24,6 @@
             position: relative;
             padding: 190px 15px 60px;
         }
-    }
-
-    a {
-        color: $main-font-color;
-        text-decoration: none;
     }
 }
 
@@ -46,13 +46,12 @@
     &_levitation {
         @include sm {
             width: 274px;
-            @include absolut-top-center (0%, 50%);
+            @include absolut-top-center(0%, 50%);
         }
 
         @include xs {
             max-width: 243px;
-            @include absolut-top-center (0%, 50%);
-
+            @include absolut-top-center(0%, 50%);
         }
     }
 }
@@ -143,269 +142,6 @@
             width: 132px;
             height: 40px;
             padding: 13px 28px 16px;
-
         }
-    }
-}
-
-/* блок Встречайте весну
-вместе с нами */
-.mainSpring {
-    &__wrap {
-        position: relative;
-        background: url('../../images/main-careImg/банер\ 1.png');
-        @include background();
-        height: 400px;
-        padding: 81px 0;
-        position: relative;
-
-        @include sm {
-            background-image: url('../../images/main-careImg/банер\ 1\ 432.png');
-            @include background();
-            height: 432px;
-            padding: 97px 0;
-        }
-
-        @include xs {
-            background-image: url('../../images/main-careImg/баннер\ 1vert.png');
-            @include background();
-            height: 562px;
-            padding: 296px 38px 60px;
-        }
-    }
-
-    a {
-        color: $main-font-color;
-        text-decoration: none;
-    }
-}
-
-.mainSpringBox {
-    @include absolute-right(50%, 0%);
-    max-width: 284px;
-    margin-right: 284px;
-
-    @include sm {
-        max-width: 284px;
-        margin-right: 85px;
-    }
-
-    @include xs {
-        top: unset;
-        right: unset;
-        transform: unset;
-        max-width: 253px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    &__title {
-        @include heading-font(32px, 500, 125%);
-        margin-bottom: 30px;
-
-        @include sm {
-            @include heading-font(32px, 500, 125%);
-            margin-bottom: 30px;
-
-        }
-
-        @include xs {
-            @include heading-font(28px, 500, 125%);
-            margin-bottom: 25px;
-            height: 54px;
-        }
-    }
-
-    &__text p {
-        @include heading-font(18px, 400, 145%);
-        height: 65px;
-        margin-bottom: 40px;
-
-        @include xs {
-            @include heading-font(16px, 400, 145%);
-            margin-bottom: 30px;
-            height: 57px;
-        }
-    }
-
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 141px;
-        height: 41px;
-        padding: 13px 28px 16px;
-
-        @include xs {
-            width: 132px;
-            height: 40px;
-            margin: 0 auto;
-        }
-    }
-}
-
-
-
-/* блок Индивидуальный уход */
-.personalCare {
-    padding: 140px 98px;
-    overflow: hidden;
-
-    &__wrap {
-        position: relative;
-    }
-}
-
-.personalCareImg {
-    @include absolute-right (50%, 0%);
-    width: 670px;
-    height: 451px;
-    display: block;
-
-    @include sm {
-        display: none;
-    }
-
-    @include xs {
-        display: none;
-    }
-
-    &_sm {
-        width: 398px;
-        height: 403px;
-        display: none;
-
-        @include sm {
-            display: block;
-        }
-    }
-
-    &_xs {
-        display: flex;
-        width: 250px;
-        height: 252px;
-        display: none;
-
-        @include xs {
-            display: block;
-        }
-    }
-}
-
-.personalCareBox {
-    width: 670px;
-    height: 583px;
-    background-color: #f4f1ed;
-    padding: 100px;
-
-
-    &__title {
-        @include heading-font(32px, 500, 130%);
-        margin-bottom: 40px;
-    }
-
-    &__text {
-        max-width: 329px;
-        margin-bottom: 45px;
-    }
-
-    &__text p {
-        @include text-font(18px, 400, 145%);
-        margin-bottom: 18px;
-    }
-
-    &__text p:last-child {
-        margin-bottom: 0;
-    }
-
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 200px;
-        height: 41px;
-    }
-}
-
-
-
-/* блок Наша история */
-.history {
-    overflow: hidden;
-
-    &__wrap {
-        background-image: url('../../images/main-careImg/600693-PMYQNV-922\ 1.jpg');
-        width: 1366px;
-        height: 433px;
-    }
-}
-
-.historyBox {
-    @include flex-center;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-top: 120px;
-
-    &__text {
-        max-width: 761px;
-        margin-bottom: 50px;
-    }
-
-    &__text p {
-        @include heading-font(31px, 500, 125%);
-        text-align: center;
-        width: 761px;
-        height: 102px;
-    }
-
-    &__text p :last-child {
-        margin-bottom: 0;
-    }
-
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 163px;
-        height: 41px;
-    }
-}
-
-.mainGallery {
-    overflow: hidden;
-
-
-
-    &__wrap {
-        @include flex-center;
-        background: #F8F8F6;
-        width: 1366px;
-        height: 594px;
-    }
-}
-
-.mainGalleryBox {
-    &__title {
-        @include heading-font(32px, 500, 125%);
-        margin-bottom: 30px;
-    }
-
-    &__text {
-        max-width: 269px;
-        margin-bottom: 40px;
-    }
-
-    &__text p {
-        @include text-font(18px, 400, 145%);
-        width: 269px;
-        height: 66px;
-    }
-
-    &__btn {
-        @include flex-center;
-        @include text-font(16px, 500, 140%);
-        @include border;
-        width: 170px;
-        height: 41px;
     }
 }
