@@ -1689,12 +1689,12 @@ body {
   max-width: 1170px;
   margin: 0 98px 0 98px;
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .catalog__body {
     margin: 0 45px 0 45px;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .catalog__body {
     margin: 0 15px 0 15px;
   }
@@ -1704,7 +1704,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .catalog__headline {
     margin-top: 40px;
     display: flex;
@@ -1718,7 +1718,7 @@ body {
   font-weight: 500;
   line-height: 130%;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .catalog__title {
     font-size: 28px;
     font-family: Raleway;
@@ -1738,13 +1738,14 @@ body {
   height: 41px;
   border-radius: 2px;
   border: 1px solid #B3BAC1;
+  background: none;
 }
 @media screen and (max-width: 767px) {
   .catalog__filter-button {
     font-size: 14px;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .catalog__filter-button {
     font-family: "M PLUS 1p";
     font-size: 16px;
@@ -1761,12 +1762,12 @@ body {
 .catalog__cards {
   margin: 60px 0 50px 0;
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .catalog__cards {
     margin: 47px 0 50px 0;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .catalog__cards {
     margin: 50px 0 35px 0;
   }
@@ -1778,7 +1779,7 @@ body {
   gap: 30px;
   justify-content: center;
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 324px);
@@ -1786,7 +1787,7 @@ body {
     justify-content: center;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, 290px);
@@ -1807,7 +1808,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .catalog-card {
     width: 324px;
     background-size: contain;
@@ -1821,7 +1822,7 @@ body {
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .catalog-card {
     width: 290px;
     height: 290px;
@@ -1859,12 +1860,12 @@ body {
 .card-high {
   background-image: url("../../images/catalogImg/background/High.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-high {
     background-image: url("../../images/catalogImg/backgroundTablet/high_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-high {
     background-image: url("../../images/catalogImg/backgroundMobile/high_mob.png");
   }
@@ -1873,12 +1874,12 @@ body {
 .card-rest {
   background-image: url("../../images/catalogImg/background/Rest.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-rest {
     background-image: url("../../images/catalogImg/backgroundTablet/rest_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-rest {
     background-image: url("../../images/catalogImg/backgroundMobile/rest_mob.png");
   }
@@ -1887,12 +1888,12 @@ body {
 .card-rose {
   background-image: url("../../images/catalogImg/background/Rose.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-rose {
     background-image: url("../../images/catalogImg/backgroundTablet/rose_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-rose {
     background-image: url("../../images/catalogImg/backgroundMobile/rose_mob.png");
   }
@@ -1901,12 +1902,12 @@ body {
 .card-milk {
   background-image: url("../../images/catalogImg/background/Milk.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-milk {
     background-image: url("../../images/catalogImg/backgroundTablet/milk_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-milk {
     background-image: url("../../images/catalogImg/backgroundMobile/milk_mob.png");
   }
@@ -1915,12 +1916,12 @@ body {
 .card-paradise {
   background-image: url("../../images/catalogImg/background/Paradise.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-paradise {
     background-image: url("../../images/catalogImg/backgroundTablet/paradise_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-paradise {
     background-image: url("../../images/catalogImg/backgroundMobile/paradise_mob.png");
   }
@@ -1929,12 +1930,12 @@ body {
 .card-sun {
   background-image: url("../../images/catalogImg/background/Sun.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-sun {
     background-image: url("../../images/catalogImg/backgroundTablet/sun_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-sun {
     background-image: url("../../images/catalogImg/backgroundMobile/sun_mob.png");
   }
@@ -1943,12 +1944,12 @@ body {
 .card-violet {
   background-image: url("../../images/catalogImg/background/Violet.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-violet {
     background-image: url("../../images/catalogImg/backgroundTablet/violet_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-violet {
     background-image: url("../../images/catalogImg/backgroundMobile/violet_mob.png");
   }
@@ -1957,12 +1958,12 @@ body {
 .card-clean {
   background-image: url("../../images/catalogImg/background/Clean.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-clean {
     background-image: url("../../images/catalogImg/backgroundTablet/clean_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-clean {
     background-image: url("../../images/catalogImg/backgroundMobile/clean_mob.png");
   }
@@ -1971,12 +1972,12 @@ body {
 .card-coconut {
   background-image: url("../../images/catalogImg/background/Coconut.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-coconut {
     background-image: url("../../images/catalogImg/backgroundTablet/coconut_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-coconut {
     background-image: url("../../images/catalogImg/backgroundMobile/coconut_mob.png");
   }
@@ -1985,12 +1986,12 @@ body {
 .card-lavender {
   background-image: url("../../images/catalogImg/background/Lavender.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-lavender {
     background-image: url("../../images/catalogImg/backgroundTablet/lavendar_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-lavender {
     background-image: url("../../images/catalogImg/backgroundMobile/lavender_mob.png");
   }
@@ -1999,12 +2000,12 @@ body {
 .card-lotos {
   background-image: url("../../images/catalogImg/background/Lotos.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-lotos {
     background-image: url("../../images/catalogImg/backgroundTablet/lotos_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-lotos {
     background-image: url("../../images/catalogImg/backgroundMobile/lotos_mob.png");
   }
@@ -2013,12 +2014,12 @@ body {
 .card-earth {
   background-image: url("../../images/catalogImg/background/Earth.png");
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .card-earth {
     background-image: url("../../images/catalogImg/backgroundTablet/earth_tab.png");
   }
 }
-@media screen and (max-width: 1365px) and (max-width: 767px) {
+@media only screen and (max-width: 1365px) and (max-width: 767px) {
   .card-earth {
     background-image: url("../../images/catalogImg/backgroundMobile/earth_mob.png");
   }
@@ -2029,7 +2030,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .product-navigation {
     padding: 0;
     display: flex;
@@ -2072,12 +2073,12 @@ body {
   max-width: 1170px;
   margin: 140px 98px 0 98px;
 }
-@media screen and (max-width: 1365px) {
+@media only screen and (max-width: 1365px) {
   .recent__body {
     margin: 120px 45px 0 45px;
   }
 }
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .recent__body {
     margin: 80px 15px 40px 15px;
   }
@@ -2093,18 +2094,18 @@ body {
 .recent__cards {
   margin: 60px 0 50px 0;
 }
-@media screen and (max-width: 767px) {
-  .recent__cards > .product-card.card-clean {
+@media only screen and (max-width: 767px) {
+  .recent__cards > .catalog-card.card-clean {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .recent__cards > .product-card.card-lavender {
+@media only screen and (max-width: 767px) {
+  .recent__cards > .catalog-card.card-lavender {
     display: none;
   }
 }
-@media screen and (max-width: 767px) {
-  .recent__cards > .product-card.card-coconut {
+@media only screen and (max-width: 767px) {
+  .recent__cards > .catalog-card.card-coconut {
     display: none;
   }
 }

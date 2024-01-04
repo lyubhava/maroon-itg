@@ -14,11 +14,11 @@
         max-width: 1170px;
         margin: 0 98px 0 98px;
 
-        @media screen and (max-width: 1365px) {
+        @include sm {
             margin: 0 45px 0 45px;
         }
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             margin: 0 15px 0 15px;
         }
     }
@@ -28,7 +28,7 @@
         display: flex;
         justify-content: space-between;
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             margin-top: 40px;
             display: flex;
             justify-content: space-between;
@@ -38,7 +38,7 @@
     &__title {
         @include heading-font(36px, 500, 130%);
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             @include heading-font(28px, 500, 130%);
         }
 
@@ -50,8 +50,9 @@
         height: 41px;
         border-radius: 2px;
         border: 1px solid #B3BAC1;
+        background: none;
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             font-family: 'M PLUS 1p';
             font-size: 16px;
             font-style: normal;
@@ -68,11 +69,11 @@
     &__cards {
         margin: 60px 0 50px 0;
 
-        @media screen and (max-width: 1365px) {
+        @include sm {
             margin: 47px 0 50px 0;
         }
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             margin: 50px 0 35px 0;
         }
     }
@@ -84,14 +85,14 @@
     gap: 30px;
     justify-content: center;
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         display: grid;
         grid-template-columns: repeat(auto-fit, 324px);
         gap: 30px;
         justify-content: center;
     }
 
-    @media screen and (max-width: 767px) {
+    @include xs {
         display: grid;
         grid-template-columns: repeat(auto-fit, 290px);
         gap: 30px;
@@ -112,7 +113,7 @@
     flex-direction: column;
     justify-content: flex-end;
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         width: 324px;
         background-size: contain;
         background-position: center;
@@ -125,7 +126,7 @@
         justify-content: flex-end;
     }
 
-    @media screen and (max-width: 767px) {
+    @include xs {
         width: 290px;
         height: 290px;
         background-size: contain;
@@ -164,10 +165,10 @@
 .card-high {
     background-image: url("../../images/catalogImg/background/High.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/high_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/high_mob.png")
         }
     }
@@ -176,10 +177,10 @@
 .card-rest {
     background-image: url("../../images/catalogImg/background/Rest.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/rest_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/rest_mob.png")
         }
     }
@@ -188,10 +189,10 @@
 .card-rose {
     background-image: url("../../images/catalogImg/background/Rose.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/rose_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/rose_mob.png")
         }
     }
@@ -200,10 +201,10 @@
 .card-milk {
     background-image: url("../../images/catalogImg/background/Milk.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/milk_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/milk_mob.png")
         }
     }
@@ -212,10 +213,10 @@
 .card-paradise {
     background-image: url("../../images/catalogImg/background/Paradise.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/paradise_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/paradise_mob.png")
         }
     }
@@ -224,10 +225,10 @@
 .card-sun {
     background-image: url("../../images/catalogImg/background/Sun.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/sun_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/sun_mob.png")
         }
     }
@@ -236,10 +237,10 @@
 .card-violet {
     background-image: url("../../images/catalogImg/background/Violet.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/violet_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/violet_mob.png")
         }
     }
@@ -248,10 +249,10 @@
 .card-clean {
     background-image: url("../../images/catalogImg/background/Clean.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/clean_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/clean_mob.png")
         }
     }
@@ -260,10 +261,10 @@
 .card-coconut {
     background-image: url("../../images/catalogImg/background/Coconut.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/coconut_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/coconut_mob.png")
         }
     }
@@ -272,10 +273,10 @@
 .card-lavender {
     background-image: url("../../images/catalogImg/background/Lavender.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/lavendar_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/lavender_mob.png")
         }
     }
@@ -284,10 +285,10 @@
 .card-lotos {
     background-image: url("../../images/catalogImg/background/Lotos.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/lotos_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/lotos_mob.png")
         }
     }
@@ -296,10 +297,10 @@
 .card-earth {
     background-image: url("../../images/catalogImg/background/Earth.png");
 
-    @media screen and (max-width: 1365px) {
+    @include sm {
         background-image: url("../../images/catalogImg/backgroundTablet/earth_tab.png");
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             background-image: url("../../images/catalogImg/backgroundMobile/earth_mob.png")
         }
     }
@@ -310,7 +311,7 @@
     display: flex;
     justify-content: space-between;
 
-    @media screen and (max-width: 767px) {
+    @include xs {
         padding: 0;
         display: flex;
         justify-content: space-between;
@@ -359,11 +360,11 @@
         max-width: 1170px;
         margin: 140px 98px 0 98px;
 
-        @media screen and (max-width: 1365px) {
+        @include sm {
             margin: 120px 45px 0 45px;
         }
 
-        @media screen and (max-width: 767px) {
+        @include xs {
             margin: 80px 15px 40px 15px;
         }
     }
@@ -377,20 +378,20 @@
         margin: 60px 0 50px 0;
     }
 
-    &__cards>.product-card.card-clean {
-        @media screen and (max-width: 767px) {
+    &__cards>.catalog-card.card-clean {
+        @include xs {
             display: none;
         }
     }
 
-    &__cards>.product-card.card-lavender {
-        @media screen and (max-width: 767px) {
+    &__cards>.catalog-card.card-lavender {
+        @include xs {
             display: none;
         }
     }
 
-    &__cards>.product-card.card-coconut {
-        @media screen and (max-width: 767px) {
+    &__cards>.catalog-card.card-coconut {
+        @include xs {
             display: none;
         }
     }
