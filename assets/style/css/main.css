@@ -629,7 +629,8 @@ body {
 
 .product-card {
   display: flex;
-  margin: 40px 198px 140px 98px;
+  margin: 40px auto 140px auto;
+  max-width: 1366px;
 }
 .product-card__img {
   width: 630px;
@@ -662,6 +663,7 @@ body {
   font-weight: 500;
   text-decoration: none;
   color: #122947;
+  color: #122947;
 }
 @media screen and (max-width: 767px) {
   .subtitle {
@@ -684,7 +686,10 @@ body {
 }
 .info .info__paragraf {
   /*текст, походу нужно было как-то в 1 р вкладывать, ведь в иделе если этим сайтом бы пользовались то для нового товара бы каждый раз не делали новый html, хз как это обычно работает, но я не знаю как без br это сделать*/
-  margin-bottom: 15px;
+  margin-bottom: 45px;
+}
+.info .paragraf {
+  max-width: 274px;
 }
 .info .paragraf .paragraf__p:last-child {
   margin-bottom: 0;
@@ -720,18 +725,8 @@ body {
   justify-content: space-between;
 }
 .info .toggle .toggle-title .toggle-title__name {
-  font-family: "M PLUS 1p";
-  font-size: 16px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 500;
-  text-decoration: none;
-  color: #122947;
-  font-weight: 500;
-}
-@media screen and (max-width: 767px) {
-  .info .toggle .toggle-title .toggle-title__name {
-    font-size: 14px;
-  }
 }
 .info .toggle .toggle-title .toggle-title__minus {
   color: #122947;
@@ -760,18 +755,9 @@ body {
   display: flex;
   align-items: center;
 }
-.info .volume .volume__text {
-  font-family: "M PLUS 1p";
-  font-size: 16px;
-  font-style: normal;
+.info .volume {
+  font-size: 18px;
   font-weight: 500;
-  text-decoration: none;
-  color: #122947;
-}
-@media screen and (max-width: 767px) {
-  .info .volume .volume__text {
-    font-size: 14px;
-  }
 }
 .info .volume .volume__options {
   accent-color: #122947;
@@ -782,21 +768,11 @@ body {
 }
 .info .sell {
   line-height: normal;
+  align-items: center;
 }
 .info .sell .sell__price {
-  font-family: "M PLUS 1p";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  text-decoration: none;
-  color: #122947;
   font-size: 26px;
   margin-right: 50px;
-}
-@media screen and (max-width: 767px) {
-  .info .sell .sell__price {
-    font-size: 14px;
-  }
 }
 .info .sell .box {
   /*кнопку взяла у Даши, убрала только зеленый т.к на этой стр ничего зеленого нет*/
@@ -920,7 +896,7 @@ body {
   margin-right: 32px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1365px) {
   .product-card {
     margin: 40px 45px 0 40px;
     flex-direction: column;
@@ -961,9 +937,9 @@ body {
     height: 100%;
   }
 }
-@media screen and (max-width: 1024px) {
+@media only screen and (max-width: 1365px) {
   .product-card {
-    margin: 40px 15px 0 15px;
+    margin: 40px 45 0;
     flex-direction: column;
   }
   .product-card__img {
@@ -988,7 +964,7 @@ body {
   .info .sell .sell__price {
     width: 30%;
     font-weight: 500;
-    margin-right: 12px;
+    margin-right: 22px;
     align-self: center;
   }
   .info .sell .sell__button {

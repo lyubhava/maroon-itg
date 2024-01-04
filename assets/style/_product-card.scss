@@ -1,6 +1,7 @@
 .product-card {
     display: flex;
-    margin: 40px 198px 140px 98px;
+    margin: 40px auto 140px auto;
+    max-width: 1366px;
 
     &__img {
         width: 630px;
@@ -27,6 +28,7 @@
 .subtitle {
     /*подзаголовок, вынесла за пределы чтобы использовать повторно*/
     @include button-font;
+    color: $main-font-color;
 }
 
 .info {
@@ -46,10 +48,12 @@
 
     .info__paragraf {
         /*текст, походу нужно было как-то в 1 р вкладывать, ведь в иделе если этим сайтом бы пользовались то для нового товара бы каждый раз не делали новый html, хз как это обычно работает, но я не знаю как без br это сделать*/
-        margin-bottom: 15px;
+        margin-bottom: 45px;
     }
 
     .paragraf {
+        max-width: 274px;
+
         .paragraf__p:last-child {
             margin-bottom: 0;
         }
@@ -81,7 +85,7 @@
             justify-content: space-between;
 
             .toggle-title__name {
-                @include button-font;
+                font-size: 18px;
                 font-weight: 500;
             }
 
@@ -109,9 +113,9 @@
     }
 
     .volume {
-        .volume__text {
-            @include button-font;
-        }
+        font-size: 18px;
+        font-weight: 500;
+
 
         .volume__options {
             accent-color: $main-font-color;
@@ -125,9 +129,9 @@
 
     .sell {
         line-height: normal;
+        align-items: center;
 
         .sell__price {
-            @include button-font;
             font-size: 26px;
             margin-right: 50px;
         }
@@ -284,7 +288,7 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@include sm {
     .product-card {
         margin: 40px 45px 0 40px;
         flex-direction: column;
@@ -338,9 +342,9 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
+@include sm {
     .product-card {
-        margin: 40px 15px 0 15px;
+        margin: 40px 45 0;
         flex-direction: column;
 
         &__img {
@@ -379,7 +383,7 @@
             .sell__price {
                 width: 30%;
                 font-weight: 500;
-                margin-right: 12px;
+                margin-right: 22px;
                 align-self: center;
             }
 
