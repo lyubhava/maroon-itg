@@ -1,6 +1,16 @@
 /* блок Встречайте весну
   вместе с нами */
 .mainSpring {
+    background: url('../../images/springImg/банер\ 1.png');
+    @include background();
+
+    @include sm {
+        background-image: url('../../images/springImg/банер\ 1\ 432.png');
+    }
+
+    @include xs {
+        background-image: url('../../images/springImg/баннер\ 1vert.png');
+    }
 
     a {
         color: $main-font-color;
@@ -8,26 +18,19 @@
     }
 
     &__wrap {
-        overflow: hidden;
         max-width: 1366px;
-        position: relative;
-        background: url("../../images/springImg/банер\ 1.png");
-        @include background();
+        margin: 0 auto;
         height: 400px;
         padding: 81px 0;
         position: relative;
 
         @include sm {
-            background-image: url("../../images/springImg/банер\ 1\ 432.png");
-            @include background();
             height: 432px;
             padding: 97px 0;
         }
 
         @include xs {
-            background-image: url("../../images/springImg/баннер\ 1vert.png");
-            @include background();
-            height: 562px;
+            height: auto;
             padding: 296px 38px 60px;
         }
     }
@@ -44,6 +47,7 @@
     }
 
     @include xs {
+        position: relative;
         top: unset;
         right: unset;
         transform: unset;
@@ -64,7 +68,7 @@
         @include xs {
             @include heading-font(28px, 500, 125%);
             margin-bottom: 25px;
-            height: 54px;
+            height: auto;
         }
     }
 
@@ -76,7 +80,7 @@
         @include xs {
             @include heading-font(16px, 400, 145%);
             margin-bottom: 30px;
-            height: 57px;
+            height: auto;
         }
     }
 

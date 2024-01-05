@@ -373,7 +373,6 @@ body {
 @media only screen and (max-width: 767px) {
   .section-bestsellers .container-items .container-items-wrapper {
     display: flex;
-    margin-right: 42px;
   }
 }
 .section-bestsellers .container-items .container-description {
@@ -1032,7 +1031,6 @@ body {
   text-decoration: none;
 }
 .mainCare__wrap {
-  overflow: hidden;
   max-width: 1366px;
   display: flex;
   justify-content: space-between;
@@ -1049,6 +1047,8 @@ body {
 @media only screen and (max-width: 767px) {
   .mainCare__wrap {
     position: relative;
+    justify-content: center;
+    gap: 30px;
     padding: 190px 15px 60px;
   }
 }
@@ -1069,6 +1069,12 @@ body {
 .mainCareBox img {
   width: 100%;
   height: auto;
+}
+@media only screen and (max-width: 767px) {
+  .mainCareBox img {
+    width: 130px;
+    height: 170px;
+  }
 }
 @media only screen and (max-width: 1365px) {
   .mainCareBox_levitation {
@@ -1232,39 +1238,42 @@ body {
 
 /* блок Встречайте весну
   вместе с нами */
+.mainSpring {
+  background: url("../../images/springImg/банер 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@media only screen and (max-width: 1365px) {
+  .mainSpring {
+    background-image: url("../../images/springImg/банер 1 432.png");
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mainSpring {
+    background-image: url("../../images/springImg/баннер 1vert.png");
+  }
+}
 .mainSpring a {
   color: #122947;
   text-decoration: none;
 }
 .mainSpring__wrap {
-  overflow: hidden;
   max-width: 1366px;
-  position: relative;
-  background: url("../../images/springImg/банер 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  margin: 0 auto;
   height: 400px;
   padding: 81px 0;
   position: relative;
 }
 @media only screen and (max-width: 1365px) {
   .mainSpring__wrap {
-    background-image: url("../../images/springImg/банер 1 432.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
     height: 432px;
     padding: 97px 0;
   }
 }
 @media only screen and (max-width: 767px) {
   .mainSpring__wrap {
-    background-image: url("../../images/springImg/баннер 1vert.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 562px;
+    height: auto;
     padding: 296px 38px 60px;
   }
 }
@@ -1287,6 +1296,7 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .mainSpringBox {
+    position: relative;
     top: unset;
     right: unset;
     transform: unset;
@@ -1321,7 +1331,7 @@ body {
     font-weight: 500;
     line-height: 125%;
     margin-bottom: 25px;
-    height: 54px;
+    height: auto;
   }
 }
 .mainSpringBox__text p {
@@ -1341,7 +1351,7 @@ body {
     font-weight: 400;
     line-height: 145%;
     margin-bottom: 30px;
-    height: 57px;
+    height: auto;
   }
 }
 .mainSpringBox__btn {
@@ -1374,7 +1384,6 @@ body {
 
 /* блок Индивидуальный уход */
 .personalCare {
-  overflow: hidden;
   max-width: 1366px;
   margin: 0 auto;
   padding: 140px 98px;
@@ -1559,29 +1568,28 @@ body {
 
 /* блок Наша история */
 .history {
-  max-width: 1366px;
-  margin: 0 auto;
+  background-image: url("../../images/main-careImg/600693-PMYQNV-922 1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .history a {
   color: #122947;
   text-decoration: none;
 }
-@media only screen and (max-width: 1365px) {
-  .history {
-    max-width: 768px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .history {
-    max-width: 320px;
-  }
-}
 .history__wrap {
-  background-image: url("../../images/main-careImg/600693-PMYQNV-922 1.jpg");
+  max-width: 1366px;
   height: 433px;
+  margin: 0 auto;
 }
 @media only screen and (max-width: 1365px) {
   .history__wrap {
+    max-width: 768px;
+  }
+}
+@media only screen and (max-width: 1365px) {
+  .history__wrap {
+    max-width: 320px;
     height: unset;
   }
 }
@@ -1616,7 +1624,7 @@ body {
   }
 }
 .historyBox__text p {
-  font-size: 31px;
+  font-size: 32px;
   font-family: Raleway;
   font-style: normal;
   font-weight: 500;
