@@ -399,7 +399,7 @@ body {
   margin-bottom: 13px;
 }
 .section-bestsellers .container-items .container-description__additional-text {
-  font-family: Mplus 1p;
+  font-family: M PLUS 1p;
   font-size: 13px;
   font-weight: 400;
   text-decoration: underline;
@@ -1855,12 +1855,12 @@ body {
   font-size: 16px;
 }
 .catalog-card____price {
-  font-family: Mplus 1p;
+  font-family: M PLUS 1p;
   font-size: 13px;
 }
 .catalog-card__extra-info {
   color: #9A9DA0;
-  font-family: Mplus 1p;
+  font-family: "M PLUS 1p";
   font-size: 13px;
   font-weight: 400;
   line-height: 145%;
@@ -2052,7 +2052,7 @@ body {
 .product-navigation .pages {
   display: flex;
   justify-self: center;
-  font-family: Mplus 1p;
+  font-family: "M PLUS 1p";
   font-size: 18px;
   font-weight: 500;
   line-height: 145%;
@@ -2103,6 +2103,7 @@ body {
   line-height: 125%;
   text-align: center;
   margin-bottom: 60px;
+  color: #122947;
 }
 @media only screen and (max-width: 767px) {
   .recent__title {
@@ -2148,7 +2149,7 @@ body {
 .follow-container a {
   color: #122947;
   text-decoration: none;
-  font-family: Mplus 1p;
+  font-family: M PLUS 1p;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -2191,7 +2192,7 @@ body {
 }
 .follow-content__txt {
   margin-top: 15px;
-  font-family: "mplus 1p", "arial", sans-serif;
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2207,7 +2208,7 @@ body {
   border: 1px solid #B3BAC1;
   box-sizing: border-box;
   border-radius: 2px;
-  font-family: "mplus 1p", "arial", sans-serif;
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -2260,7 +2261,7 @@ body {
 }
 .contacts-content__link {
   text-decoration: none;
-  font-family: "mplus 1p", "arial", sans-serif;
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -2268,7 +2269,7 @@ body {
 }
 .contacts-content__social {
   color: #122947;
-  font-family: Mplus 1p;
+  font-family: M PLUS 1p;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -2296,41 +2297,68 @@ body {
 .footer a {
   color: #122947;
   text-decoration: none;
-  font-family: Mplus 1p;
+  font-family: "M PLUS 1p";
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-
-.footer-container {
-  padding-top: 59px;
-  padding-bottom: 59px;
+.footer .footer-container {
   position: relative;
   border-bottom: 1px solid #d1d1d1;
 }
-
-.footer-content {
+.footer .footer-content {
   align-items: center;
   display: flex;
   justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0 98px;
 }
-.footer-content__nav {
+@media only screen and (max-width: 1365px) {
+  .footer .footer-content {
+    margin: 0 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-content {
+    flex-wrap: wrap;
+    margin: 0 15px;
+    justify-content: flex-start;
+    row-gap: 30px;
+  }
+}
+.footer .footer-content__nav {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
-  margin-left: 6%;
+  margin-left: 7%;
   padding: 0;
+  gap: 40px;
 }
-.footer-content__item {
-  margin-right: 40px;
+@media only screen and (max-width: 1365px) {
+  .footer .footer-content__nav {
+    gap: 25px;
+  }
 }
-.footer-content__link {
+@media only screen and (max-width: 767px) {
+  .footer .footer-content__nav {
+    justify-content: flex-start;
+    margin-left: 0;
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-content__logo {
+    flex-basis: 100%;
+  }
+}
+.footer .footer-content__link {
   text-decoration: none;
-  font-family: "mplus 1p", "arial", sans-serif;
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -2339,7 +2367,12 @@ body {
   align-items: center;
   color: #122947;
 }
-.footer-content__social-networks {
+@media only screen and (max-width: 767px) {
+  .footer .footer-content__link {
+    font-size: 14px;
+  }
+}
+.footer .footer-content__social-networks {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -2350,36 +2383,59 @@ body {
   margin-left: auto;
   padding: 0;
   max-width: 220px;
-  margin-right: 70px;
+  gap: 30px;
 }
-
-.footer-copyright {
+@media only screen and (max-width: 1365px) {
+  .footer .footer-content__social-networks {
+    gap: 25px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-content__social-networks {
+    margin-left: 0;
+    flex-basis: 100%;
+  }
+}
+.footer .footer-copyright {
   padding-top: 18px;
   padding-bottom: 18px;
-  font-family: "mplus 1p", "arial", sans-serif;
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
   line-height: 18px;
   color: #959595;
-  color: #959595;
+  margin: 0 98px;
 }
-.footer-copyright__txt {
+@media only screen and (max-width: 1365px) {
+  .footer .footer-copyright {
+    margin: 0 45px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer .footer-copyright {
+    margin: 0;
+    padding: 25px 15px;
+  }
+}
+.footer .footer-copyright__txt {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.footer-copyright__link {
+@media only screen and (max-width: 767px) {
+  .footer .footer-copyright__txt {
+    row-gap: 20px;
+  }
+}
+.footer .footer-copyright__link {
   text-decoration: none;
   color: #959595;
-  font-family: Mplus 1p;
+  font-family: "M PLUS 1p";
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-.footer-copyright__txt span {
-  margin: 30px;
 }
 
 /*# sourceMappingURL=main.css.map */
