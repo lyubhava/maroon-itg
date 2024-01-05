@@ -1,0 +1,101 @@
+.footer {
+    background: #f4f1ed;
+    margin-top: 140px;
+
+    a {
+        color: $main-font-color;
+        text-decoration: none;
+        font-family: Mplus 1p;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.footer-container {
+    padding-top: 59px;
+    padding-bottom: 59px;
+    position: relative;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.footer-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        margin-left: 6%;
+        padding: 0;
+    }
+
+    &__item {
+        margin-right: 40px;
+    }
+
+    &__link {
+        text-decoration: none;
+        font-family: 'mplus 1p', 'arial', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        color: $main-font-color;
+    }
+
+    &__social-networks {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0;
+        margin-left: auto;
+        padding: 0;
+        max-width: 220px;
+        margin-right: 70px;
+    }
+}
+
+.footer-copyright {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-family: 'mplus 1p', 'arial', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #959595;
+
+    &__txt {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    color: #959595;
+
+    &__link {
+        text-decoration: none;
+        color: #959595;
+        font-family: Mplus 1p;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__txt span {
+        margin: 30px;
+    }
+}
