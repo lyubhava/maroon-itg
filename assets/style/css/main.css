@@ -629,7 +629,7 @@ body {
 
 .product-card {
   display: flex;
-  margin: 40px auto 140px 98px;
+  margin: 40px 98px 140px 98px;
   max-width: 1366px;
 }
 .product-card__img {
@@ -811,9 +811,9 @@ body {
   background-image: url("../../images/product-cardImg/background/item4.jpg");
 }
 .recommended .rec-product .rec-product__card {
-  min-width: 310px;
-  min-height: 370px;
-  margin-right: 35px;
+  width: 270px;
+  height: 350px;
+  margin-right: 30px;
 }
 .recommended .rec-product .rec-product__card:last-child {
   margin-right: 0;
@@ -837,7 +837,7 @@ body {
 }
 .recommended .recommended__nav {
   width: 100%;
-  margin: 0 auto 140px;
+  margin: 0 auto;
 }
 .recommended .recommended__nav .nav-items {
   display: flex;
