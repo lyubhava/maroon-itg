@@ -273,224 +273,265 @@
         </form>
     </section>
 
-    <div class="container">
-        <section class="catalog">
-            <div class="catalog__body">
-                <!-- класс catalog__body используется чтобы задать внешнюю геометрию блоку catalog (отступы справа и слева)-
-                <div class="catalog__headline">
-                    <h2 class="catalog__title">Каталог</h2>
-                    <button class="catalog__filter-button">Фильтр</button>
-                </div> -->
-                <div class="catalog__cards cards">
-                    <!-- класс catalog__cards используется как элемент блока "catalog" с внешней геометрией, класс cards для повторяющихся на странице блоков с карточками (единый класс для каталога и недавно просмотренных продуктов)--->
-                    <div class="catalog-card card-high">
-                        <!-- класс catalog-card используется как отдельный повторяющийся блок внутри блоков "catalog" и "recent", классы по типу"card-high", "card-rest" и т.д. для каждого конкретного продукта--->
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">High</p>
-                            <p class="catalog-card__price">990 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">крем для лица</p>
-                            <p class="catalog-card__volume">50ml</p>
-                        </div>
+    <section class="catalog container catalog_filter">
+        <div class="catalog__body">
+            <div class="catalog__cards cards">
+                <!-- класс catalog__cards используется как элемент блока "catalog" с внешней геометрией, класс cards для повторяющихся на странице блоков с карточками (единый класс для каталога и недавно просмотренных продуктов)--->
+                <div class="catalog-card card-high">
+                    <!-- класс catalog-card используется как отдельный повторяющийся блок внутри блоков "catalog" и "recent", классы по типу"card-high", "card-rest" и т.д. для каждого конкретного продукта--->
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">High</p>
+                        <p class="catalog-card__price">
+                            990
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
                     </div>
-                    <div class="catalog-card card-rest">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Rest</p>
-                            <p class="catalog-card__price">690 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">минеральная пудра</p>
-                            <p class="catalog-card__volume">20g</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-rose">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Rose</p>
-                            <p class="catalog-card__price">890 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">крем для лица</p>
-                            <p class="catalog-card__volume">50ml</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-milk">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Milk</p>
-                            <p class="catalog-card__price">790 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">масло для тела</p>
-                            <p class="catalog-card__volume">150ml</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-paradise">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Paradise</p>
-                            <p class="catalog-card__price">590 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">минеральная пудра/p></p>
-                            <p class="catalog-card__volume">15g</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-sun">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Sun</p>
-                            <p class="catalog-card__price">90 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">бомбочка для ванны</p>
-                            <p class="catalog-card__volume">20g</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-violet">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Violet</p>
-                            <p class="catalog-card__price">890 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">крем для лица</p>
-                            <p class="catalog-card__volume">50ml</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-clean">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Clean</p>
-                            <p class="catalog-card__price">490 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">маска для лица</p>
-                            <p class="catalog-card__volume">100g</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-coconut">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Coconut</p>
-                            <p class="catalog-card__price">990 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">масло для тела</p>
-                            <p class="catalog-card__volume">300ml</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-lavender">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Lavender</p>
-                            <p class="catalog-card__price">290 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">мыло ручной работы</p>
-                            <p class="catalog-card__volume">50g</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-lotos">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Lotos</p>
-                            <p class="catalog-card__price">890 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">маска для лица</p>
-                            <p class="catalog-card__volume">50ml</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-earth">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Earth</p>
-                            <p class="catalog-card__price">90 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">бомбочка для ванны</p>
-                            <p class="catalog-card__volume">20g</p>
-                        </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">крем для лица</p>
+                        <p class="catalog-card__volume">50ml</p>
                     </div>
                 </div>
-                <div class="product-navigation">
-                    <div class="pages">
-                        <div class="pages__active">1</div>
-                        <div class="pages__dash">
-                            <img src="./assets/images/catalogImg/icons/dash.svg" />
-                        </div>
-                        <div class="pages__total">8</div>
+                <div class="catalog-card card-rest">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Rest</p>
+                        <p class="catalog-card__price">
+                            690
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
                     </div>
-                    <div class="arrows">
-                        <div class="arrows__left">
-                            <img src="./assets/images/catalogImg/icons/arrowleft.svg" />
-                        </div>
-                        <div class="arrows__right">
-                            <img src="./assets/images/catalogImg/icons/arrowright.svg" />
-                        </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">минеральная пудра</p>
+                        <p class="catalog-card__volume">20g</p>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="recent">
-            <div class="recent__body">
-                <!-- класс recent__body используется чтобы задать внешнюю геометрию блоку recent (отступы справа и слева)--->
-                <h2 class="recent__title">Вы недавно смотрели</h2>
-                <div class="recent__cards cards">
-                    <!-- класс recent__cards используется как элемент блока "recent" с внешней геометрией, класс cards для повторяющихся на странице блоков с карточками (единый класс для каталога и недавно просмотренных продуктов)--->
-                    <div class="catalog-card card-clean">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Clean</p>
-                            <p class="catalog-card__price">490 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">маска для лица</p>
-                            <p class="catalog-card__volume">100g</p>
-                        </div>
+                <div class="catalog-card card-rose">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Rose</p>
+                        <p class="catalog-card__price">
+                            890
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
                     </div>
-                    <div class="catalog-card card-lotos">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Lotos</p>
-                            <p class="catalog-card__price">890 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">маска для лица</p>
-                            <p class="catalog-card__volume">50ml</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-lavender">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Lavender</p>
-                            <p class="catalog-card__price">290 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">мыло ручной работы</p>
-                            <p class="catalog-card__volume">50g</p>
-                        </div>
-                    </div>
-                    <div class="catalog-card card-coconut">
-                        <div class="catalog-card__main-info">
-                            <p class="catalog-card__name">Coconut</p>
-                            <p class="catalog-card__price">990 &#8381;</p>
-                        </div>
-                        <div class="catalog-card__extra-info">
-                            <p class="catalog-card__description">масло для тела</p>
-                            <p class="catalog-card__volume">300ml</p>
-                        </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">крем для лица</p>
+                        <p class="catalog-card__volume">50ml</p>
                     </div>
                 </div>
-                <div class="product-navigation">
-                    <div class="pages">
-                        <div class="pages__active">1</div>
-                        <div class="pages__dash">
-                            <img src="./assets/images/catalogImg/icons/dash.svg" alt="dash" />
-                        </div>
-                        <div class="pages__total">3</div>
+                <div class="catalog-card card-milk">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Milk</p>
+                        <p class="catalog-card__price">
+                            790
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
                     </div>
-                    <div class="arrows">
-                        <div class="arrows__left">
-                            <img src="./assets/images/catalogImg/icons/arrowleft.svg" alt="left arrow" />
-                        </div>
-                        <div class="arrows__right">
-                            <img src="./assets/images/catalogImg/icons/arrowright.svg" alt="right arrow" />
-                        </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">масло для тела</p>
+                        <p class="catalog-card__volume">150ml</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-paradise">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Paradise</p>
+                        <p class="catalog-card__price">
+                            590
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">минеральная пудра/p></p>
+                        <p class="catalog-card__volume">15g</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-sun">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Sun</p>
+                        <p class="catalog-card__price">
+                            90
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">бомбочка для ванны</p>
+                        <p class="catalog-card__volume">20g</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-violet">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Violet</p>
+                        <p class="catalog-card__price">
+                            890
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">крем для лица</p>
+                        <p class="catalog-card__volume">50ml</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-clean">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Clean</p>
+                        <p class="catalog-card__price">
+                            490
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">маска для лица</p>
+                        <p class="catalog-card__volume">100g</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-coconut">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Coconut</p>
+                        <p class="catalog-card__price">
+                            990
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">масло для тела</p>
+                        <p class="catalog-card__volume">300ml</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-lavender">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Lavender</p>
+                        <p class="catalog-card__price">
+                            290
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">мыло ручной работы</p>
+                        <p class="catalog-card__volume">50g</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-lotos">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Lotos</p>
+                        <p class="catalog-card__price">
+                            890
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">маска для лица</p>
+                        <p class="catalog-card__volume">50ml</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-earth">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Earth</p>
+                        <p class="catalog-card__price">
+                            90
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">бомбочка для ванны</p>
+                        <p class="catalog-card__volume">20g</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="product-navigation">
+                <div class="pages">
+                    <div class="pages__active">1</div>
+                    <div class="pages__dash">
+                        <img src="./assets/images/catalogImg/icons/dash.svg" />
+                    </div>
+                    <div class="pages__total">8</div>
+                </div>
+                <div class="arrows">
+                    <div class="arrows__left">
+                        <img src="./assets/images/catalogImg/icons/arrowleft.svg" />
+                    </div>
+                    <div class="arrows__right">
+                        <img src="./assets/images/catalogImg/icons/arrowright.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recent container">
+        <div class="recent__body">
+            <!-- класс recent__body используется чтобы задать внешнюю геометрию блоку recent (отступы справа и слева)--->
+            <h2 class="recent__title">Вы недавно смотрели</h2>
+            <div class="recent__cards cards">
+                <!-- класс recent__cards используется как элемент блока "recent" с внешней геометрией, класс cards для повторяющихся на странице блоков с карточками (единый класс для каталога и недавно просмотренных продуктов)--->
+                <div class="catalog-card card-clean">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Clean</p>
+                        <p class="catalog-card__price">
+                            490
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">маска для лица</p>
+                        <p class="catalog-card__volume">100g</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-lotos">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Lotos</p>
+                        <p class="catalog-card__price">
+                            890
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">маска для лица</p>
+                        <p class="catalog-card__volume">50ml</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-lavender">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Lavender</p>
+                        <p class="catalog-card__price">
+                            290
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">мыло ручной работы</p>
+                        <p class="catalog-card__volume">50g</p>
+                    </div>
+                </div>
+                <div class="catalog-card card-coconut">
+                    <div class="catalog-card__main-info">
+                        <p class="catalog-card__name">Coconut</p>
+                        <p class="catalog-card__price">
+                            990
+                            <img src="./assets/images/catalogImg/icons/ruble.svg" alt="ruble" />
+                        </p>
+                    </div>
+                    <div class="catalog-card__extra-info">
+                        <p class="catalog-card__description">масло для тела</p>
+                        <p class="catalog-card__volume">300ml</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product-navigation">
+                <div class="pages">
+                    <div class="pages__active">1</div>
+                    <div class="pages__dash">
+                        <img src="./assets/images/catalogImg/icons/dash.svg" alt="dash" />
+                    </div>
+                    <div class="pages__total">3</div>
+                </div>
+                <div class="arrows">
+                    <div class="arrows__left">
+                        <img src="./assets/images/catalogImg/icons/arrowleft.svg" alt="left arrow" />
+                    </div>
+                    <div class="arrows__right">
+                        <img src="./assets/images/catalogImg/icons/arrowright.svg" alt="right arrow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

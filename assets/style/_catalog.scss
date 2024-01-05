@@ -1,35 +1,61 @@
-/*общие свойства, предлагаю как вариант их вынести в отдельный файл _template.scss со шрифтами и шаблонами, а в _var.scss оставить только переменные (+добавить переменные для font-family), или оставить просто в начале документа со стилями*/
+/*общие свойства*/
 .container {
     max-width: 1366px;
-    background-color: #F8F8F6;
     width: 100%;
     margin: 0 auto;
+
+    @include sm {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    @include xs {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+    }
 }
 
 /* окончание общих свойств */
 
 
 .catalog {
+    &_filter {
+        margin-top: 100px;
+    }
+
     &__body {
         max-width: 1170px;
-        margin: 0 98px 0 98px;
+        margin: 0 98px 140px 98px;
 
         @include sm {
-            margin: 0 45px 0 45px;
+            max-width: 678px;
+            margin: 0 45px 120px 45px;
         }
 
         @include xs {
-            margin: 0 15px 0 15px;
+            margin: 0 15px 80px 15px;
+            max-width: 290px;
         }
     }
 
     &__headline {
-        margin-top: 48px;
+        padding-top: 48px;
+        margin-bottom: 60px;
         display: flex;
         justify-content: space-between;
 
+        @include sm {
+            padding-top: 48px;
+            margin-bottom: 47px;
+            display: flex;
+            justify-content: space-between;
+        }
+
         @include xs {
-            margin-top: 40px;
+            padding-top: 40px;
+            margin-bottom: 50px;
             display: flex;
             justify-content: space-between;
         }
@@ -51,6 +77,7 @@
         border-radius: 2px;
         border: 1px solid #B3BAC1;
         background: none;
+        text-decoration: none;
 
         @include xs {
             font-family: 'M PLUS 1p';
@@ -67,14 +94,11 @@
     }
 
     &__cards {
-        margin: 60px 0 50px 0;
+        margin-bottom: 50px;
 
-        @include sm {
-            margin: 47px 0 50px 0;
-        }
 
         @include xs {
-            margin: 50px 0 35px 0;
+            margin-bottom: 35px;
         }
     }
 }
@@ -141,13 +165,21 @@
 
     &__main-info {
         color: $main-font-color;
-        font-family: Raleway;
-        font-size: 16px;
         font-weight: 500;
         line-height: 145%;
         display: flex;
         justify-content: space-between;
         width: 100%;
+    }
+
+    &__name {
+        font-family: Raleway;
+        font-size: 16px;
+    }
+
+    &____price {
+        font-family: Mplus 1p;
+        font-size: 13px;
     }
 
     &__extra-info {
@@ -307,7 +339,7 @@
 }
 
 .product-navigation {
-    padding-left: 40%;
+    padding-left: 46%;
     display: flex;
     justify-content: space-between;
 
@@ -358,24 +390,35 @@
 .recent {
     &__body {
         max-width: 1170px;
-        margin: 140px 98px 0 98px;
+        margin: 0 98px 140px 98px;
 
         @include sm {
-            margin: 120px 45px 0 45px;
+            margin: 0 45px 120px 45px;
         }
 
         @include xs {
-            margin: 80px 15px 40px 15px;
+            margin: 0 15px 80px 15px;
         }
     }
 
     &__title {
         @include heading-font(32px, 500, 125%);
         text-align: center;
+        margin-bottom: 60px;
+
+        @include xs {
+            @include heading-font(32px, 500, 125%);
+            text-align: center;
+            margin-bottom: 40px;
+        }
     }
 
     &__cards {
-        margin: 60px 0 50px 0;
+        margin-bottom: 50px;
+
+        @include xs {
+            margin-bottom: 35px;
+        }
     }
 
     &__cards>.catalog-card.card-clean {

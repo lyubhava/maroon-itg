@@ -1658,37 +1658,65 @@ body {
   }
 }
 
-/*общие свойства, предлагаю как вариант их вынести в отдельный файл _template.scss со шрифтами и шаблонами, а в _var.scss оставить только переменные (+добавить переменные для font-family), или оставить просто в начале документа со стилями*/
+/*общие свойства*/
 .container {
   max-width: 1366px;
-  background-color: #F8F8F6;
   width: 100%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1365px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 
 /* окончание общих свойств */
+.catalog_filter {
+  margin-top: 100px;
+}
 .catalog__body {
   max-width: 1170px;
-  margin: 0 98px 0 98px;
+  margin: 0 98px 140px 98px;
 }
 @media only screen and (max-width: 1365px) {
   .catalog__body {
-    margin: 0 45px 0 45px;
+    max-width: 678px;
+    margin: 0 45px 120px 45px;
   }
 }
 @media only screen and (max-width: 767px) {
   .catalog__body {
-    margin: 0 15px 0 15px;
+    margin: 0 15px 80px 15px;
+    max-width: 290px;
   }
 }
 .catalog__headline {
-  margin-top: 48px;
+  padding-top: 48px;
+  margin-bottom: 60px;
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1365px) {
+  .catalog__headline {
+    padding-top: 48px;
+    margin-bottom: 47px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 @media only screen and (max-width: 767px) {
   .catalog__headline {
-    margin-top: 40px;
+    padding-top: 40px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
   }
@@ -1721,6 +1749,7 @@ body {
   border-radius: 2px;
   border: 1px solid #B3BAC1;
   background: none;
+  text-decoration: none;
 }
 @media screen and (max-width: 767px) {
   .catalog__filter-button {
@@ -1742,16 +1771,11 @@ body {
   }
 }
 .catalog__cards {
-  margin: 60px 0 50px 0;
-}
-@media only screen and (max-width: 1365px) {
-  .catalog__cards {
-    margin: 47px 0 50px 0;
-  }
+  margin-bottom: 50px;
 }
 @media only screen and (max-width: 767px) {
   .catalog__cards {
-    margin: 50px 0 35px 0;
+    margin-bottom: 35px;
   }
 }
 
@@ -1820,13 +1844,19 @@ body {
 }
 .catalog-card__main-info {
   color: #122947;
-  font-family: Raleway;
-  font-size: 16px;
   font-weight: 500;
   line-height: 145%;
   display: flex;
   justify-content: space-between;
   width: 100%;
+}
+.catalog-card__name {
+  font-family: Raleway;
+  font-size: 16px;
+}
+.catalog-card____price {
+  font-family: Mplus 1p;
+  font-size: 13px;
 }
 .catalog-card__extra-info {
   color: #9A9DA0;
@@ -2008,7 +2038,7 @@ body {
 }
 
 .product-navigation {
-  padding-left: 40%;
+  padding-left: 46%;
   display: flex;
   justify-content: space-between;
 }
@@ -2053,16 +2083,16 @@ body {
 
 .recent__body {
   max-width: 1170px;
-  margin: 140px 98px 0 98px;
+  margin: 0 98px 140px 98px;
 }
 @media only screen and (max-width: 1365px) {
   .recent__body {
-    margin: 120px 45px 0 45px;
+    margin: 0 45px 120px 45px;
   }
 }
 @media only screen and (max-width: 767px) {
   .recent__body {
-    margin: 80px 15px 40px 15px;
+    margin: 0 15px 80px 15px;
   }
 }
 .recent__title {
@@ -2072,9 +2102,26 @@ body {
   font-weight: 500;
   line-height: 125%;
   text-align: center;
+  margin-bottom: 60px;
+}
+@media only screen and (max-width: 767px) {
+  .recent__title {
+    font-size: 32px;
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
 }
 .recent__cards {
-  margin: 60px 0 50px 0;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 767px) {
+  .recent__cards {
+    margin-bottom: 35px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .recent__cards > .catalog-card.card-clean {
