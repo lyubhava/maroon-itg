@@ -629,7 +629,7 @@ body {
 
 .product-card {
   display: flex;
-  margin: 40px auto 140px auto;
+  margin: 40px auto 140px 98px;
   max-width: 1366px;
 }
 .product-card__img {
@@ -637,16 +637,11 @@ body {
   height: 647px;
   margin-right: 70px;
 }
-.product-card__img img {
-  width: 100%;
-}
 .product-card__info {
-  /*элемент для части кроме картинки*/
   width: 40%;
 }
 
 .title {
-  /*заголовок, вынесла за пределы чтобы использовать повторно*/
   color: #122947;
   font-size: 32px;
   font-family: Raleway;
@@ -656,14 +651,14 @@ body {
 }
 
 .subtitle {
-  /*подзаголовок, вынесла за пределы чтобы использовать повторно*/
   font-family: "M PLUS 1p";
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   text-decoration: none;
   color: #122947;
-  color: #122947;
+  font-size: 13px;
+  color: #9A9DA0;
 }
 @media screen and (max-width: 767px) {
   .subtitle {
@@ -672,20 +667,16 @@ body {
 }
 
 .info {
-  /*блок для части кроме картинки*/
   display: flex;
   flex-direction: column;
 }
 .info .info__title {
-  /*блок для заголовка*/
   margin: 49px 0 0 0;
 }
 .info .info__subtitle {
-  /*блок для подзаголовка*/
   margin: 15px 0 45px 0;
 }
 .info .info__paragraf {
-  /*текст, походу нужно было как-то в 1 р вкладывать, ведь в иделе если этим сайтом бы пользовались то для нового товара бы каждый раз не делали новый html, хз как это обычно работает, но я не знаю как без br это сделать*/
   margin-bottom: 45px;
 }
 .info .paragraf {
@@ -713,11 +704,7 @@ body {
   color: #b3bac1;
 }
 .info .info__toggle {
-  /*Раскрывающийся состав и способ применения стили для позиционирования*/
   margin: 0;
-}
-.info .toggle {
-  /*Раскрывающийся состав и способ применения, тот же блок, стили для стилизации*/
 }
 .info .toggle .toggle-title {
   margin: 18px 15px 20px 0;
@@ -774,9 +761,6 @@ body {
   font-size: 26px;
   margin-right: 50px;
 }
-.info .sell .box {
-  /*кнопку взяла у Даши, убрала только зеленый т.к на этой стр ничего зеленого нет*/
-}
 .info .sell .box .box__action {
   max-width: 214px;
   margin: 0 auto;
@@ -792,27 +776,22 @@ body {
   border: 1px solid #b3bac1;
   color: #122947;
   text-decoration: none;
-  text-wrap: nowrap;
 }
 .info .sell .box .box__btn:hover {
   background-color: rgb(254, 244, 244);
   color: #122947;
 }
 
-/* ↓ вторая часть, "вам может понравиться" ↓ */
 .recommended {
   margin: 0 98px 140px 98px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  /**/
 }
 .recommended .recommended__title {
-  /*добавила к заголовку стиль сверху строка 30*/
   margin-bottom: 60px;
 }
 .recommended .recommended__product {
-  /*только задала отступы тк это элемент. стили самого блока ниже в rec-product */
   margin-bottom: 50px;
 }
 .recommended .rec-product {
@@ -820,26 +799,20 @@ body {
   flex-shrink: 1;
 }
 .recommended .rec-product #item1 {
-  background-image: url(../../images/product-cardImg/background/item1.jpg);
+  background-image: url("../../images/product-cardImg/background/item1.jpg");
 }
 .recommended .rec-product #item2 {
-  background-image: url(../../images/product-cardImg/background/item2.jpg);
+  background-image: url("../../images/product-cardImg/background/item2.jpg");
 }
 .recommended .rec-product #item3 {
-  background-image: url(../../images/product-cardImg/background/item3.jpg);
+  background-image: url("../../images/product-cardImg/background/item3.jpg");
 }
 .recommended .rec-product #item4 {
-  background-image: url(../../images/product-cardImg/background/item4.jpg);
-}
-.recommended .rec-product #item1,
-.recommended .rec-product #item2,
-.recommended .rec-product #item3,
-.recommended .rec-product #item4 {
-  /*добавила в var*/
+  background-image: url("../../images/product-cardImg/background/item4.jpg");
 }
 .recommended .rec-product .rec-product__card {
-  width: 270px;
-  height: 350px;
+  min-width: 310px;
+  min-height: 370px;
   margin-right: 35px;
 }
 .recommended .rec-product .rec-product__card:last-child {
@@ -864,11 +837,12 @@ body {
 }
 .recommended .recommended__nav {
   width: 100%;
-  margin-bottom: 140px;
+  margin: 0 auto 140px;
 }
 .recommended .recommended__nav .nav-items {
   display: flex;
   justify-content: space-between;
+  max-width: 1366px;
 }
 .recommended .recommended__nav .nav-items .nav-items__pages {
   margin-left: 45%;
@@ -887,10 +861,11 @@ body {
   flex: 1;
 }
 .recommended .recommended__nav .nav-items .pages .pages__total {
-  columns: #9A9DA0;
+  color: #9A9DA0;
 }
-.recommended .recommended__nav .nav-items .nav-items__arrows {
-  /*стрелки выходят за пределы при размерах более 1370px не стала исправлять тк говорили только планшет-телефон*/
+.recommended .recommended__nav .nav-items .nav-items__arrows .arrow {
+  width: 26px;
+  height: 12px;
 }
 .recommended .recommended__nav .nav-items .nav-items__arrows img:first-child {
   margin-right: 32px;
@@ -898,27 +873,59 @@ body {
 
 @media only screen and (max-width: 1365px) {
   .product-card {
-    margin: 40px 45px 0 40px;
+    margin: 40px 45px 0px 45px;
     flex-direction: column;
   }
   .product-card__img {
-    min-width: 100%;
+    padding-bottom: 60px;
+    max-width: 678px;
     height: 470px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
   .product-card__img img {
     width: 100%;
-    /* Чтобы изображение занимало всю доступную ширину контейнера */
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
   }
   .product-card__info {
     width: 100%;
   }
-  .info .toggle .toggle__list {
+  .info h3,
+  .info p {
+    margin: 0;
+  }
+  .info .info__title {
+    margin: 0;
+  }
+  .info .info__subtitle {
+    margin-top: 15px;
+    margin-bottom: 45px;
+  }
+  .info .paragraf {
+    max-width: 100%;
+  }
+  .info .paragraf p {
     width: 100%;
+  }
+  .toggle .toggle__list p {
+    margin-right: 25px;
+  }
+  .info__volume .volume__text {
+    margin-right: 17px;
+    font-weight: 500;
+  }
+  .sell {
+    display: flex;
+  }
+  .sell .sell__price {
+    font-weight: 500;
+    margin-right: 22px;
+  }
+  .sell .sell__button {
+    align-self: flex-start;
+  }
+  .sell .sell__button .box__btn {
+    font-size: 14px;
   }
   .recommended {
     margin: 120px 45px 0 45px;
@@ -937,51 +944,63 @@ body {
     height: 100%;
   }
 }
-@media only screen and (max-width: 1365px) {
+@media only screen and (max-width: 767px) {
   .product-card {
-    margin: 40px 45 0;
+    margin: 40px 15px 0 15px;
     flex-direction: column;
   }
   .product-card__img {
+    max-width: 290px;
+    max-height: 260px;
     margin: 0;
-    width: 100%;
-    height: 50%;
-    overflow: hidden;
+  }
+  .product-card__img img {
+    max-width: 290px;
+    max-height: 260px;
   }
   .product-card__info {
     width: 100%;
   }
-  .info .info__paragraf {
-    margin-right: 15px;
+  .product-card__info .info__subtitle {
+    margin-bottom: 30px;
   }
-  .info .toggle .toggle__list p {
-    margin-right: 25px;
+  .product-card__info .info__paragraf {
+    margin-bottom: 40px;
   }
-  .info .info__volume .volume__text {
-    margin-right: 17px;
-    font-weight: 500;
+  .info h3,
+  .info p {
+    margin: 0;
+  }
+  .info .toggle .toggle__list {
+    width: 100%;
   }
   .info .sell .sell__price {
-    width: 30%;
-    font-weight: 500;
-    margin-right: 22px;
-    align-self: center;
+    margin-right: 35px;
+  }
+  .info .sell .sell__price img {
+    width: 13px;
+    height: 17px;
   }
   .info .sell .sell__button {
-    width: 70%;
+    width: 195px;
+    height: 40px;
   }
-  .info .sell .sell__button .box__btn {
+  .info .sell .sell__button .box__action .box__btn {
     font-size: 14px;
   }
   .recommended {
     margin: 80px 15px 0 15px;
     display: flex;
   }
+  .recommended .recommended__title {
+    margin-bottom: 40px;
+  }
   .recommended .recommended__title .title {
     text-align: center;
   }
   .recommended .recommended__product {
     width: 100%;
+    margin-bottom: 35px;
   }
   .recommended .rec-product .rec-product__card {
     display: none;
