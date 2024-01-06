@@ -40,6 +40,7 @@
     @include absolute-right(50%, 0%);
     max-width: 284px;
     margin-right: 284px;
+    color: $main-font-color;
 
     @include sm {
         max-width: 284px;

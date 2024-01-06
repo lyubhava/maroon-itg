@@ -74,6 +74,7 @@
             .toggle-title__name {
                 font-size: 18px;
                 font-weight: 500;
+                color: $main-font-color;
             }
 
             .toggle-title__minus {
@@ -102,6 +103,7 @@
     .volume {
         font-size: 18px;
         font-weight: 500;
+        color: $main-font-color;
 
         .volume__name {
             margin-right: 17px;
@@ -124,6 +126,7 @@
         .sell__price {
             font-size: 26px;
             margin-right: 50px;
+            color: $main-font-color;
         }
 
         .box {

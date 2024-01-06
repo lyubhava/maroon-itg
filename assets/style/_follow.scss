@@ -3,11 +3,12 @@
     background-color: $main-background-color;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 140px;
 
     a {
         color: $main-font-color;
         text-decoration: none;
-        font-family: M PLUS 1p;
+        font-family: "M PLUS 1p";
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -47,7 +48,7 @@
     }
 
     &__title {
-        font-family: 'raleway', 'arial', sans-serif;
+        font-family: "raleway", "arial", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 32px;
@@ -57,7 +58,7 @@
 
     &__txt {
         margin-top: 15px;
-        font-family: 'M PLUS 1p', 'arial', sans-serif;
+        font-family: "M PLUS 1p", "arial", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 18px;
@@ -71,15 +72,105 @@
         width: 200px;
         height: 41px;
         display: block;
-        border: 1px solid #B3BAC1;
+        border: 1px solid #b3bac1;
         box-sizing: border-box;
         border-radius: 2px;
-        font-family: 'M PLUS 1p', 'arial', sans-serif;
+        font-family: "M PLUS 1p", "arial", sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         text-align: center;
         padding: 10px;
         color: $main-font-color;
+    }
+}
+
+@include sm {
+    .follow-container {
+        margin-bottom: 120px;
+
+        .follow {
+            .follow__wrap {
+                margin-left: 0;
+                justify-content: start;
+                width: auto;
+
+                .follow-wrapper {
+                    display: grid;
+                    grid-template-columns: repeat(2, 233px);
+                    width: auto;
+                    margin-right: 48px;
+
+                    img:first-child {
+                        display: none;
+                    }
+
+                    img:nth-child(3) {
+                        display: none;
+                    }
+                }
+
+                .follow-content {
+                    max-width: 276px;
+
+                    .follow-content__container {
+                        width: auto;
+
+                        .follow-content__txt {
+                            margin-top: 30px;
+                        }
+
+                        .follow-content__button {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    .follow-container {
+        .follow {
+            margin-bottom: 80px;
+
+            .follow__wrap {
+                display: flex;
+                flex-direction: column-reverse;
+                margin: 0px;
+                height: auto;
+
+                .follow-content {
+                    text-align: center;
+
+                    .follow-content__container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .follow-content__txt {
+                            margin-top: 25px;
+                        }
+
+                        .follow-content__button {
+                            margin-top: 30px;
+                            margin-bottom: 50px;
+                        }
+                    }
+                }
+
+                .follow-wrapper {
+                    grid-template-columns: repeat(2, 145px);
+                    margin: 0;
+
+                    .follow-wrapper_img {
+                        width: 145px;
+                        height: 145px;
+                        flex-shrink: 0;
+                    }
+                }
+            }
+        }
     }
 }

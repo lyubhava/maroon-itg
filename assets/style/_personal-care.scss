@@ -79,6 +79,7 @@
     height: 583px;
     background-color: #f4f1ed;
     padding: 100px;
+    color: $main-font-color;
 
     @include sm {
         width: 100%;

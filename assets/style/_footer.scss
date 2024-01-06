@@ -24,17 +24,18 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        padding-top: 60px;
-        padding-bottom: 60px;
-        margin: 0 98px;
+
+        padding: 60px 98px;
+        margin: 0 auto;
+        max-width: 1366px;
 
         @include sm {
-            margin: 0 45px;
+            padding: 60px 45px;
         }
 
         @include xs {
             flex-wrap: wrap;
-            margin: 0 15px;
+            padding: 60px 15px;
             justify-content: flex-start;
             row-gap: 30px;
         }
@@ -117,10 +118,12 @@
         font-size: 12px;
         line-height: 18px;
         color: #959595;
-        margin: 0 98px;
+        margin: 0 auto;
+        padding: 18px 98px;
+        max-width: 1366px;
 
         @include sm {
-            margin: 0 45px;
+            padding: 18px 45px;
         }
 
         @include xs {
