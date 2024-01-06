@@ -103,6 +103,10 @@
         font-size: 18px;
         font-weight: 500;
 
+        .volume__name {
+            margin-right: 17px;
+        }
+
         .volume__options {
             accent-color: $main-font-color;
         }
@@ -124,14 +128,14 @@
 
         .box {
             .box__action {
-                max-width: 214px;
+                max-width: 215px;
                 margin: 0 auto;
             }
 
             .box__btn {
                 font-size: 16px;
                 font-weight: 500;
-                padding: 12px 27px 16px;
+                padding: 13px 27px 16px 27px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -231,7 +235,6 @@
             justify-content: space-between;
             max-width: 1366px;
 
-
             .nav-items__pages {
                 margin-left: 45%;
             }
@@ -269,7 +272,6 @@
         }
     }
 }
-
 
 @include sm {
     .product-card {
@@ -352,7 +354,7 @@
     }
 
     .recommended {
-        margin: 120px 45px 0 45px;
+        margin: 120px 45px 120px 45px;
 
         .recommended__product {
             width: 100%;
@@ -371,7 +373,6 @@
         }
     }
 }
-
 
 @include xs {
     .product-card {
@@ -417,7 +418,8 @@
 
         .sell {
             .sell__price {
-                margin-right: 35px;
+                margin-right: 32px;
+                font-size: 22px;
 
                 img {
                     width: 13px;

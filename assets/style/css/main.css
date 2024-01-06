@@ -745,6 +745,9 @@ body {
   font-size: 18px;
   font-weight: 500;
 }
+.info .volume .volume__name {
+  margin-right: 17px;
+}
 .info .volume .volume__options {
   accent-color: #122947;
 }
@@ -761,13 +764,13 @@ body {
   margin-right: 50px;
 }
 .info .sell .box .box__action {
-  max-width: 214px;
+  max-width: 215px;
   margin: 0 auto;
 }
 .info .sell .box .box__btn {
   font-size: 16px;
   font-weight: 500;
-  padding: 12px 27px 16px;
+  padding: 13px 27px 16px 27px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -927,7 +930,7 @@ body {
     font-size: 14px;
   }
   .recommended {
-    margin: 120px 45px 0 45px;
+    margin: 120px 45px 120px 45px;
   }
   .recommended .recommended__product {
     width: 100%;
@@ -974,7 +977,8 @@ body {
     width: 100%;
   }
   .info .sell .sell__price {
-    margin-right: 35px;
+    margin-right: 32px;
+    font-size: 22px;
   }
   .info .sell .sell__price img {
     width: 13px;
