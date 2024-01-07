@@ -1604,13 +1604,13 @@ body {
 @media only screen and (max-width: 1365px) {
   .history__wrap {
     max-width: 768px;
-    /* height: 393px; */
+    height: unset;
   }
 }
 @media only screen and (max-width: 767px) {
   .history__wrap {
     max-width: 320px;
-    /* height: 346px; */
+    height: unset;
   }
 }
 
@@ -1654,7 +1654,8 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .historyBox__text p {
-    font-size: 22px;
+    height: 156px;
+    font-size: 21px;
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;
