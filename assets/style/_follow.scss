@@ -3,16 +3,12 @@
     background-color: $main-background-color;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 140px;
+    padding: 140px 0;
 
     a {
+        @include text-font(16px, 500, 140%);
         color: $main-font-color;
         text-decoration: none;
-        font-family: "M PLUS 1p";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
     }
 }
 
@@ -22,8 +18,7 @@
         justify-content: space-between;
         align-items: center;
         width: 1151px;
-        height: 466px;
-        margin: 140px 98px 0 98px;
+        margin: 0 98px;
     }
 }
 
@@ -48,81 +43,83 @@
     }
 
     &__title {
-        font-family: "raleway", "arial", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 130%;
+        @include heading-font(32px, 500, 130%);
+        margin-top: 147px;
+        margin-bottom: 30px;
         color: $main-font-color;
     }
 
     &__txt {
-        margin-top: 15px;
-        font-family: "M PLUS 1p", "arial", sans-serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 18px;
-        line-height: 145%;
-        color: $main-font-color;
+        @include text-font(18px, 400, 145%);
+        margin-bottom: 40px;
     }
 
     &__button {
-        margin-top: 40px;
-        text-decoration: none;
-        width: 200px;
+        @include text-font(16px, 500, 140%);
+        @include border;
+        @include flex-center;
+        width: 170px;
         height: 41px;
-        display: block;
-        border: 1px solid #b3bac1;
-        box-sizing: border-box;
-        border-radius: 2px;
-        font-family: "M PLUS 1p", "arial", sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        text-align: center;
-        padding: 10px;
-        color: $main-font-color;
+        padding: 13px 34px 16px 33px;
+        margin-bottom: 146px;
     }
 }
 
 @include sm {
     .follow-container {
-        margin-bottom: 120px;
+        max-width: 768px;
+        padding: 120px 0;
 
         .follow {
             .follow__wrap {
-                margin-left: 0;
                 justify-content: start;
                 width: auto;
+                margin: 0 45px;
 
                 .follow-wrapper {
-                    display: grid;
-                    grid-template-columns: repeat(2, 233px);
-                    width: auto;
+                    grid-template-columns: repeat(2, 177px);
                     margin-right: 48px;
 
-                    img:first-child {
-                        display: none;
-                    }
-
-                    img:nth-child(3) {
-                        display: none;
+                    .follow-wrapper_img {
+                        width: 177px;
+                        height: 177px;
+                        flex-shrink: 0;
                     }
                 }
 
-                .follow-content {
-                    max-width: 276px;
+                img:first-child {
+                    display: none;
+                }
 
-                    .follow-content__container {
-                        width: auto;
+                img:nth-child(3) {
+                    display: none;
+                }
+            }
 
-                        .follow-content__txt {
-                            margin-top: 30px;
-                        }
+            .follow-content {
+                max-width: 276px;
 
-                        .follow-content__button {
-                            text-align: center;
-                        }
+                .follow-content__container {
+                    width: auto;
+
+                    .follow-content__title {
+                        @include heading-font(31px, 500, 125%);
+                        width: 276px;
+                        height: 63px;
+                        margin-top: 57px;
+                        margin-bottom: 30px;
+                    }
+
+                    .follow-content__txt {
+                        @include text-font(18px, 400, 140%);
+                        width: 269px;
+                        height: 66px;
+                        margin-bottom: 40px;
+                    }
+
+                    .follow-content__button {
+                        @include text-font(16px, 500, 140%);
+                        margin-bottom: 57px;
                     }
                 }
             }
@@ -130,44 +127,61 @@
     }
 }
 
+
 @include xs {
     .follow-container {
-        .follow {
-            margin-bottom: 80px;
+        max-width: 320px;
+        padding: 80px 0;
 
+        .follow {
             .follow__wrap {
                 display: flex;
                 flex-direction: column-reverse;
                 margin: 0px;
                 height: auto;
 
-                .follow-content {
-                    text-align: center;
-
-                    .follow-content__container {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-
-                        .follow-content__txt {
-                            margin-top: 25px;
-                        }
-
-                        .follow-content__button {
-                            margin-top: 30px;
-                            margin-bottom: 50px;
-                        }
-                    }
-                }
-
                 .follow-wrapper {
+                    width: auto;
                     grid-template-columns: repeat(2, 145px);
                     margin: 0;
 
                     .follow-wrapper_img {
                         width: 145px;
                         height: 145px;
-                        flex-shrink: 0;
+                    }
+                }
+            }
+
+            .follow-content {
+                text-align: center;
+
+                .follow-content__container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .follow-content__title {
+                        @include heading-font(27px, 500, 120%);
+                        width: 241px;
+                        height: 54px;
+                        margin-top: 0;
+                        margin-bottom: 25px;
+                    }
+
+                    .follow-content__txt {
+                        @include text-font(16px, 400, 130%);
+                        width: 232px;
+                        height: 56px;
+                        margin-bottom: 30px;
+                    }
+
+                    .follow-content__button {
+                        @include text-font(14px, 500, 140%);
+                        margin: 0 auto;
+                        width: 146px;
+                        height: 40px;
+                        padding: 13px 28px 16px;
+                        margin-bottom: 50px;
                     }
                 }
             }

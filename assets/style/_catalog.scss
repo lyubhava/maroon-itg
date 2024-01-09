@@ -22,7 +22,7 @@
 
 .catalog {
     &_filter {
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     &__body {
@@ -62,7 +62,9 @@
     }
 
     &__title {
+
         @include heading-font(36px, 500, 130%);
+        color: $main-font-color;
 
         @include xs {
             @include heading-font(28px, 500, 130%);
@@ -390,14 +392,14 @@
 .recent {
     &__body {
         max-width: 1170px;
-        margin: 0 98px 140px 98px;
+        margin: 0 98px;
 
         @include sm {
-            margin: 0 45px 120px 45px;
+            margin: 0 45px;
         }
 
         @include xs {
-            margin: 0 15px 80px 15px;
+            margin: 0 15px;
         }
     }
 

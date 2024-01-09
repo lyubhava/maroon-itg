@@ -8,6 +8,10 @@
     flex-wrap: wrap;
     row-gap: 48px;
 
+    @include xs {
+        padding: 48px 0 60px;
+    }
+
     .wrapper-catalog {
         flex: 1 1 100%;
         max-width: 1366px;
@@ -199,6 +203,4 @@
             }
         }
     }
-
-
 }

@@ -101,6 +101,7 @@
         max-width: 260px;
         padding-top: 61px;
         margin-bottom: 30px;
+        color: $main-font-color;
 
         @include sm {
             @include heading-font(54px, 500, normal);

@@ -51,7 +51,7 @@ body {
 }
 @media only screen and (max-width: 1365px) {
   .header {
-    max-width: 768px;
+    max-width: auto;
   }
 }
 .header__wrap {
@@ -268,7 +268,7 @@ body {
 }
 .section-bestsellers .container-bestsellers__header {
   font-size: 32px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
@@ -293,7 +293,7 @@ body {
   }
 }
 .section-bestsellers .container-bestsellers__button {
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -318,7 +318,7 @@ body {
     display: none;
   }
   .section-bestsellers .container-bestsellers__button_mobile {
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -441,6 +441,11 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 48px;
+}
+@media only screen and (max-width: 767px) {
+  .section-catalog {
+    padding: 48px 0 60px;
+  }
 }
 .section-catalog .wrapper-catalog {
   flex: 1 1 100%;
@@ -595,7 +600,7 @@ body {
   }
 }
 .section-catalog .form__button-reset, .section-catalog .form__button-submit {
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -643,14 +648,14 @@ body {
 .title {
   color: #122947;
   font-size: 32px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 120%;
 }
 
 .subtitle {
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -687,7 +692,7 @@ body {
 .info .paragraf .paragraf__p {
   margin-top: 0;
   margin-bottom: 15px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -723,7 +728,7 @@ body {
   margin-bottom: 20px;
 }
 .info .toggle .toggle__list p {
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -1126,7 +1131,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 16px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -1134,7 +1139,7 @@ body {
 @media only screen and (max-width: 767px) {
   .careLink {
     font-size: 12px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -1156,18 +1161,19 @@ body {
 }
 .mainInfo__title {
   font-size: 58px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
   max-width: 260px;
   padding-top: 61px;
   margin-bottom: 30px;
+  color: #122947;
 }
 @media only screen and (max-width: 1365px) {
   .mainInfo__title {
     font-size: 54px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1179,7 +1185,7 @@ body {
 @media only screen and (max-width: 767px) {
   .mainInfo__title {
     font-size: 42px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
@@ -1191,7 +1197,7 @@ body {
 }
 .mainInfo__text p {
   font-size: 18px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
@@ -1203,7 +1209,7 @@ body {
 @media only screen and (max-width: 767px) {
   .mainInfo__text p {
     font-size: 16px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
@@ -1218,7 +1224,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -1233,7 +1239,7 @@ body {
 @media only screen and (max-width: 767px) {
   .mainInfo__btn {
     font-size: 14px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -1315,7 +1321,7 @@ body {
 }
 .mainSpringBox__title {
   font-size: 32px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -1324,7 +1330,7 @@ body {
 @media only screen and (max-width: 1365px) {
   .mainSpringBox__title {
     font-size: 32px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -1334,7 +1340,7 @@ body {
 @media only screen and (max-width: 767px) {
   .mainSpringBox__title {
     font-size: 28px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -1344,7 +1350,7 @@ body {
 }
 .mainSpringBox__text p {
   font-size: 18px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
@@ -1354,7 +1360,7 @@ body {
 @media only screen and (max-width: 767px) {
   .mainSpringBox__text p {
     font-size: 16px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
@@ -1367,7 +1373,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -1380,7 +1386,7 @@ body {
 @media only screen and (max-width: 767px) {
   .mainSpringBox__btn {
     font-size: 14px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -1496,7 +1502,7 @@ body {
 }
 .personalCareBox__title {
   font-size: 32px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
@@ -1505,7 +1511,7 @@ body {
 @media only screen and (max-width: 767px) {
   .personalCareBox__title {
     font-size: 28px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -1526,7 +1532,7 @@ body {
 }
 .personalCareBox__text p {
   font-size: 18px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
@@ -1534,7 +1540,7 @@ body {
 @media only screen and (max-width: 767px) {
   .personalCareBox__text p {
     font-size: 16px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
@@ -1553,7 +1559,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -1566,7 +1572,7 @@ body {
   .personalCareBox__btn {
     display: inline-flex;
     font-size: 14px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -1647,7 +1653,7 @@ body {
 .historyBox__text p {
   text-align: center;
   font-size: 31px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -1656,7 +1662,7 @@ body {
   .historyBox__text p {
     height: 156px;
     font-size: 21px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -1667,7 +1673,7 @@ body {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
@@ -1681,7 +1687,7 @@ body {
     width: 154px;
     height: 40px;
     font-size: 14px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 140%;
@@ -1711,7 +1717,7 @@ body {
 
 /* окончание общих свойств */
 .catalog_filter {
-  padding-top: 100px;
+  padding-top: 80px;
 }
 .catalog__body {
   max-width: 1170px;
@@ -1753,22 +1759,23 @@ body {
 }
 .catalog__title {
   font-size: 36px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
+  color: #122947;
 }
 @media only screen and (max-width: 767px) {
   .catalog__title {
     font-size: 28px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
   }
 }
 .catalog__filter-button {
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -2113,21 +2120,21 @@ body {
 
 .recent__body {
   max-width: 1170px;
-  margin: 0 98px 140px 98px;
+  margin: 0 98px;
 }
 @media only screen and (max-width: 1365px) {
   .recent__body {
-    margin: 0 45px 120px 45px;
+    margin: 0 45px;
   }
 }
 @media only screen and (max-width: 767px) {
   .recent__body {
-    margin: 0 15px 80px 15px;
+    margin: 0 15px;
   }
 }
 .recent__title {
   font-size: 32px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 125%;
@@ -2138,7 +2145,7 @@ body {
 @media only screen and (max-width: 767px) {
   .recent__title {
     font-size: 32px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -2175,16 +2182,16 @@ body {
   background-color: #F8F8F6;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 140px;
+  padding: 140px 0;
 }
 .follow-container a {
+  font-size: 16px;
+  font-family: "M PLUS 1p", "arial", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
   color: #122947;
   text-decoration: none;
-  font-family: "M PLUS 1p";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
 
 .follow__wrap {
@@ -2192,8 +2199,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 1151px;
-  height: 466px;
-  margin: 140px 98px 0 98px;
+  margin: 0 98px;
 }
 
 .follow-wrapper {
@@ -2214,77 +2220,105 @@ body {
   width: 381px;
 }
 .follow-content__title {
-  font-family: "raleway", "arial", sans-serif;
+  font-size: 32px;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
   line-height: 130%;
+  margin-top: 147px;
+  margin-bottom: 30px;
   color: #122947;
 }
 .follow-content__txt {
-  margin-top: 15px;
+  font-size: 18px;
   font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 400;
   line-height: 145%;
-  color: #122947;
+  margin-bottom: 40px;
 }
 .follow-content__button {
-  margin-top: 40px;
-  text-decoration: none;
-  width: 200px;
-  height: 41px;
-  display: block;
-  border: 1px solid #b3bac1;
-  box-sizing: border-box;
-  border-radius: 2px;
+  font-size: 16px;
   font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  padding: 10px;
-  color: #122947;
+  line-height: 140%;
+  border-radius: 2px;
+  border: 1px solid #b3bac1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 41px;
+  padding: 13px 34px 16px 33px;
+  margin-bottom: 146px;
 }
 
 @media only screen and (max-width: 1365px) {
   .follow-container {
-    margin-bottom: 120px;
+    max-width: 768px;
+    padding: 120px 0;
   }
   .follow-container .follow .follow__wrap {
-    margin-left: 0;
     justify-content: start;
     width: auto;
+    margin: 0 45px;
   }
   .follow-container .follow .follow__wrap .follow-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 233px);
-    width: auto;
+    grid-template-columns: repeat(2, 177px);
     margin-right: 48px;
   }
-  .follow-container .follow .follow__wrap .follow-wrapper img:first-child {
+  .follow-container .follow .follow__wrap .follow-wrapper .follow-wrapper_img {
+    width: 177px;
+    height: 177px;
+    flex-shrink: 0;
+  }
+  .follow-container .follow .follow__wrap img:first-child {
     display: none;
   }
-  .follow-container .follow .follow__wrap .follow-wrapper img:nth-child(3) {
+  .follow-container .follow .follow__wrap img:nth-child(3) {
     display: none;
   }
-  .follow-container .follow .follow__wrap .follow-content {
+  .follow-container .follow .follow-content {
     max-width: 276px;
   }
-  .follow-container .follow .follow__wrap .follow-content .follow-content__container {
+  .follow-container .follow .follow-content .follow-content__container {
     width: auto;
   }
-  .follow-container .follow .follow__wrap .follow-content .follow-content__container .follow-content__txt {
-    margin-top: 30px;
+  .follow-container .follow .follow-content .follow-content__container .follow-content__title {
+    font-size: 31px;
+    font-family: "Raleway", "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    width: 276px;
+    height: 63px;
+    margin-top: 57px;
+    margin-bottom: 30px;
   }
-  .follow-container .follow .follow__wrap .follow-content .follow-content__container .follow-content__button {
-    text-align: center;
+  .follow-container .follow .follow-content .follow-content__container .follow-content__txt {
+    font-size: 18px;
+    font-family: "M PLUS 1p", "arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    width: 269px;
+    height: 66px;
+    margin-bottom: 40px;
+  }
+  .follow-container .follow .follow-content .follow-content__container .follow-content__button {
+    font-size: 16px;
+    font-family: "M PLUS 1p", "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin-bottom: 57px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .follow-container .follow {
-    margin-bottom: 80px;
+  .follow-container {
+    max-width: 320px;
+    padding: 80px 0;
   }
   .follow-container .follow .follow__wrap {
     display: flex;
@@ -2292,29 +2326,55 @@ body {
     margin: 0px;
     height: auto;
   }
-  .follow-container .follow .follow__wrap .follow-content {
-    text-align: center;
-  }
-  .follow-container .follow .follow__wrap .follow-content .follow-content__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .follow-container .follow .follow__wrap .follow-content .follow-content__container .follow-content__txt {
-    margin-top: 25px;
-  }
-  .follow-container .follow .follow__wrap .follow-content .follow-content__container .follow-content__button {
-    margin-top: 30px;
-    margin-bottom: 50px;
-  }
   .follow-container .follow .follow__wrap .follow-wrapper {
+    width: auto;
     grid-template-columns: repeat(2, 145px);
     margin: 0;
   }
   .follow-container .follow .follow__wrap .follow-wrapper .follow-wrapper_img {
     width: 145px;
     height: 145px;
-    flex-shrink: 0;
+  }
+  .follow-container .follow .follow-content {
+    text-align: center;
+  }
+  .follow-container .follow .follow-content .follow-content__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .follow-container .follow .follow-content .follow-content__container .follow-content__title {
+    font-size: 27px;
+    font-family: "Raleway", "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    width: 241px;
+    height: 54px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+  .follow-container .follow .follow-content .follow-content__container .follow-content__txt {
+    font-size: 16px;
+    font-family: "M PLUS 1p", "arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    width: 232px;
+    height: 56px;
+    margin-bottom: 30px;
+  }
+  .follow-container .follow .follow-content .follow-content__container .follow-content__button {
+    font-size: 14px;
+    font-family: "M PLUS 1p", "arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    margin: 0 auto;
+    width: 146px;
+    height: 40px;
+    padding: 13px 28px 16px;
+    margin-bottom: 50px;
   }
 }
 .container__conts {
@@ -2339,7 +2399,7 @@ body {
 }
 .container__conts .contacts .contacts__title {
   font-size: 32px;
-  font-family: Raleway;
+  font-family: "Raleway", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 130%;
@@ -2347,7 +2407,7 @@ body {
 }
 .container__conts .contacts .contacts__info h4 {
   font-size: 18px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 145%;
@@ -2355,7 +2415,7 @@ body {
 }
 .container__conts .contacts .contacts__info p {
   font-size: 18px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
@@ -2364,7 +2424,7 @@ body {
 }
 .container__conts .contacts .contacts__info a {
   font-size: 18px;
-  font-family: "M PLUS 1p";
+  font-family: "M PLUS 1p", "arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 145%;
@@ -2396,7 +2456,7 @@ body {
     height: 474px;
   }
   .container__conts .container__contacts {
-    margin-left: 0;
+    margin-left: 45px;
     width: 678px;
     height: 474px;
   }
@@ -2435,7 +2495,7 @@ body {
   }
   .container__conts .contacts .contacts__title {
     font-size: 28px;
-    font-family: Raleway;
+    font-family: "Raleway", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 130%;
@@ -2446,7 +2506,7 @@ body {
   }
   .container__conts .contacts .contacts__info h4 {
     font-size: 16px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 145%;
@@ -2454,7 +2514,7 @@ body {
   }
   .container__conts .contacts .contacts__info p {
     font-size: 16px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
@@ -2463,7 +2523,7 @@ body {
   }
   .container__conts .contacts .contacts__info a {
     font-size: 16px;
-    font-family: "M PLUS 1p";
+    font-family: "M PLUS 1p", "arial", sans-serif;
     font-style: normal;
     font-weight: 400;
     line-height: 145%;
@@ -2488,6 +2548,11 @@ body {
 .footer {
   background: #f4f1ed;
   margin-top: 140px;
+}
+@media only screen and (max-width: 1365px) {
+  .footer {
+    margin-top: 120px;
+  }
 }
 .footer a {
   color: #122947;
